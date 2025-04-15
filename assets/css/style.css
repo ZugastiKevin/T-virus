@@ -46,13 +46,21 @@
 .contact__wrapper .contact-us__wrapper .contact__reseaux a {
   color: #727070;
 }
-.contact__wrapper .contact__formulaire {
+.contact__wrapper .contact-us__wrapper .contact__reseaux a:hover {
+  color: #1C1515;
+  transform: scale(1.2) rotate(-3deg);
+  transition: all 0.3s ease;
+  text-shadow: 0 0 8px #5A0303;
+}
+.contact__wrapper #contactform {
   width: 30%;
+}
+.contact__wrapper #contactform .contact__formulaire {
   display: flex;
   gap: 1rem;
   flex-direction: column;
 }
-.contact__wrapper .contact__formulaire .form {
+.contact__wrapper #contactform .form {
   border-radius: 10px;
   padding: 12px 8px;
   background-color: #1C1515;
@@ -70,6 +78,10 @@
 }
 .contact__copy img {
   width: 10%;
+}
+.contact__copy img:hover {
+  transform: scale(1.1) rotate(-60deg);
+  transition: all 0.3s ease;
 }
 .contact__copy p {
   color: #727070;

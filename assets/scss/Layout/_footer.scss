@@ -25,13 +25,21 @@
             a {
                 color: variable.$color-thirdary;
             }
+            a:hover {
+                color: variable.$color-black;
+                transform: scale(1.2) rotate(-3deg);
+                transition: all 0.3s ease;
+                text-shadow: 0 0 8px variable.$color-secondary;
+            }
         }
     }
-    .contact__formulaire {
+    #contactform {
         width: 30%;
-        display: flex;
-        gap: 1rem;
-        flex-direction: column;
+        .contact__formulaire {
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+        }
         .form {
             border-radius: 10px;
             padding: 12px 8px;
@@ -50,6 +58,10 @@
     }
     img {
         width: 10%;
+    }
+    img:hover {
+        transform: scale(1.1) rotate(-60deg);
+        transition: all 0.3s ease;
     }
     p {
         color: variable.$color-thirdary;
