@@ -1,21 +1,21 @@
 @font-face {
   font-family: "ResidentEvil Regular";
-  src: url(../../fonts/Resident-Evil-7-Regular/Resident\ Evil\ 7\ Regular.otf);
+  src: url(../fonts/Resident-Evil-7-Regular/Resident\ Evil\ 7\ Regular.otf);
   font-weight: 400;
 }
 @font-face {
   font-family: "Figtree Bold";
-  src: url(../../fonts/Figtree/static/Figtree-Bold.ttf);
+  src: url(../fonts/Figtree/static/Figtree-Bold.ttf);
   font-weight: 700;
 }
 @font-face {
   font-family: "Figtree Regular";
-  src: url(../../fonts/Figtree/static/Figtree-Regular.ttf);
+  src: url(../fonts/Figtree/static/Figtree-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: "Figtree Light";
-  src: url(../../fonts/Figtree/static/Figtree-Light.ttf);
+  src: url(../fonts/Figtree/static/Figtree-Light.ttf);
   font-weight: 300;
 }
 .contact__wrapper {
@@ -44,6 +44,7 @@ body {
   font-family: "Figtree Regular";
   margin: 0;
   background-color: #1C1515;
+  color: white;
 }
 
 section {
@@ -54,8 +55,19 @@ h1, h2 {
   font-family: "ResidentEvil Regular";
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 h4 {
   font-size: 1.4rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .container {
