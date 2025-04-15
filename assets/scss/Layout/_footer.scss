@@ -5,16 +5,38 @@
     padding: 3rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     .contact-us__wrapper {
-        width: 50%;
+        width: 30%;
         color: variable.$color-thirdary;
+        .contact__phone, .contact__mail {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            .fa-solid {
+                font-size: 1.3rem;
+            }
+        }
+        .contact__reseaux {
+            font-size: 2rem;
+            margin-top: 8rem;
+            display: flex;
+            gap: 1.3rem;
+            a {
+                color: variable.$color-thirdary;
+            }
+        }
     }
     .contact__formulaire {
-        width: 40%;
+        width: 30%;
         display: flex;
-        gap: 1.5rem;
+        gap: 1rem;
         flex-direction: column;
+        .form {
+            border-radius: 10px;
+            padding: 12px 8px;
+            background-color: variable.$color-black;
+        }
     }
 }
 

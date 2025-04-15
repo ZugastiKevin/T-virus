@@ -23,17 +23,88 @@
   padding: 3rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .contact__wrapper .contact-us__wrapper {
-  width: 50%;
+  width: 30%;
+  color: #727070;
+}
+.contact__wrapper .contact-us__wrapper .contact__phone, .contact__wrapper .contact-us__wrapper .contact__mail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.contact__wrapper .contact-us__wrapper .contact__phone .fa-solid, .contact__wrapper .contact-us__wrapper .contact__mail .fa-solid {
+  font-size: 1.3rem;
+}
+.contact__wrapper .contact-us__wrapper .contact__reseaux {
+  font-size: 2rem;
+  margin-top: 8rem;
+  display: flex;
+  gap: 1.3rem;
+}
+.contact__wrapper .contact-us__wrapper .contact__reseaux a {
   color: #727070;
 }
 .contact__wrapper .contact__formulaire {
-  width: 40%;
+  width: 30%;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   flex-direction: column;
+}
+.contact__wrapper .contact__formulaire .form {
+  border-radius: 10px;
+  padding: 12px 8px;
+  background-color: #1C1515;
+}
+
+header {
+  margin-top: 5rem;
+}
+header nav {
+  background-color: #700C0C;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 18px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul .logo-header {
+  width: 5%;
+}
+header nav #search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header nav .search-wrapper {
+  position: relative;
+}
+header nav .search-wrapper i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+header nav #search-input {
+  padding-left: 30px;
+  height: 30px;
+  font-size: 14px;
+}
+
+.submit-btn {
+  padding: 16px 0px;
+  border-radius: 10px;
+  width: 40%;
+  background-color: #1C1515;
+  color: #727070;
+  cursor: pointer;
 }
 
 * {
@@ -62,6 +133,8 @@ ul {
 
 h4 {
   font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 img {
