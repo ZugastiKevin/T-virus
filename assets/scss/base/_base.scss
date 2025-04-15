@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as variable;
+
+* {
+    box-sizing: border-box;
+};
+
+body {
+    font-family: variable.$font-primary;
+    margin: 0;
+    background-color: variable.$color-black;
+};
+
+section {
+    margin-bottom: 3rem;
+};
+
+h1, h2 {
+    font-family: variable.$font-title-1-2;
+}

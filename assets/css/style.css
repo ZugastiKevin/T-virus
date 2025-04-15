@@ -1,3 +1,44 @@
+@font-face {
+  font-family: "ResidentEvil Regular";
+  src: url(../../fonts/Resident-Evil-7-Regular/Resident\ Evil\ 7\ Regular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Figtree Bold";
+  src: url(../../fonts/Figtree/static/Figtree-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Figtree Regular";
+  src: url(../../fonts/Figtree/static/Figtree-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Figtree Light";
+  src: url(../../fonts/Figtree/static/Figtree-Light.ttf);
+  font-weight: 300;
+}
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Figtree Regular";
+  margin: 0;
+  background-color: #1C1515;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h1, h2 {
+  font-family: "ResidentEvil Regular";
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
 
 /*# sourceMappingURL=style.css.map */
