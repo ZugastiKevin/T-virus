@@ -18,6 +18,24 @@
   src: url(../../fonts/Figtree/static/Figtree-Light.ttf);
   font-weight: 300;
 }
+.contact__wrapper {
+  background-color: #700C0C;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact__wrapper .contact-us__wrapper {
+  width: 50%;
+  color: #727070;
+}
+.contact__wrapper .contact__formulaire {
+  width: 40%;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -34,6 +52,10 @@ section {
 
 h1, h2 {
   font-family: "ResidentEvil Regular";
+}
+
+h4 {
+  font-size: 1.4rem;
 }
 
 .container {

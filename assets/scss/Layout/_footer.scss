@@ -1,0 +1,20 @@
+@use "../abstracts/variables" as variable;
+
+.contact__wrapper {
+    background-color: variable.$color-primary;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .contact-us__wrapper {
+        width: 50%;
+        color: variable.$color-thirdary;
+    }
+    .contact__formulaire {
+        width: 40%;
+        display: flex;
+        gap: 1.5rem;
+        flex-direction: column;
+    }
+}
+
