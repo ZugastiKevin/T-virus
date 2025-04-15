@@ -3,10 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.scss">
+    <link rel="stylesheet" href="assets\css\style.css">
+    <script src="https://kit.fontawesome.com/84a235b10e.js" crossorigin="anonymous"></script>
     <title>T-virus</title>
 </head>
 <body>
+    <header>
+        <nav class="container">
+            <ul>
+                <li>Evenements</li>
+                <li>Notre entreprise</li>
+                <div class="logo-header">
+                    <img src="assets\img\Logo.png" alt="">
+                </div>
+                <li>Nos reseaux</li>
+                <li>Contact</li>
+            </ul>
+            <div id="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search-input" placeholder="Recherche...">
+                <button onclick="search()">Rechercher</button>
+            </div>
+        </nav>
+    </header>
     <script src="scripts.js"></script>
 </body>
 </html>

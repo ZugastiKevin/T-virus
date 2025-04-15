@@ -1,2 +1,49 @@
 @use "../abstracts/variables" as variable;
 
+header {
+    margin-top: 5rem;
+    nav {
+        background-color: variable.$color-primary;
+        padding-left: 5rem; 
+        padding-right: 5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        border-radius: 18px;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo-header {
+                width: 5%;
+        
+            }
+        }
+        #search-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+          
+          .search-wrapper {
+            position: relative;
+          }
+          
+          .search-wrapper i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #888;
+          }
+          
+          #search-input {
+            padding-left: 30px;
+            height: 30px;
+            font-size: 14px;
+          }
+          
+        
+}
+
+}

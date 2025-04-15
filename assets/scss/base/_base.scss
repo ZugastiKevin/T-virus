@@ -8,6 +8,7 @@ body {
     font-family: variable.$font-primary;
     margin: 0;
     background-color: variable.$color-black;
+    color:white;
 };
 
 section {
@@ -16,4 +17,14 @@ section {
 
 h1, h2 {
     font-family: variable.$font-title-1-2;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
