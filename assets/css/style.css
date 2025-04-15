@@ -58,6 +58,23 @@
   background-color: #1C1515;
 }
 
+.contact__copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__copy .logo-footer a {
+  display: flex;
+  justify-content: center;
+}
+.contact__copy img {
+  width: 10%;
+}
+.contact__copy p {
+  color: #727070;
+  font-size: 0.9rem;
+}
+
 header {
   margin-top: 5rem;
 }

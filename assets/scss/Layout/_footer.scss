@@ -39,4 +39,20 @@
         }
     }
 }
+.contact__copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .logo-footer a{
+        display: flex;
+        justify-content: center;
+    }
+    img {
+        width: 10%;
+    }
+    p {
+        color: variable.$color-thirdary;
+        font-size: 0.9rem;
+    }
+}
 
