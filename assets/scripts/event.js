@@ -6,7 +6,7 @@ const eventButton = document.querySelector(".event-button");
 
 async function getData(finder) {
     try {
-        const  reponse = await fetch('event.json');
+        const  reponse = await fetch('../../assets/json/event.json');
         if (!reponse.ok) {
             throw new Error("La réponse n'est pas OK");
         }
