@@ -1,0 +1,40 @@
+@use "../abstracts/variables" as variable;
+
+.devis__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 30%;
+    border: solid 3px variable.$color-thirdary;
+    padding: 2rem 4rem;
+    border-radius: 15px;
+    background-color: variable.$color-white;
+    color: variable.$color-black;
+    margin-top: 3rem;
+    p{
+        color: variable.$color-thirdary;
+        font-size: 0.9rem;
+        margin-top: 0;
+    }
+    h3 {
+        margin-bottom: 0;
+    }
+    .devis__form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .star {
+        color: variable.$color-primary;
+    }
+    .devis__submit {
+        text-align: center;
+        margin-top: 3rem;
+    }
+    .devis__input {
+        border-radius: 15px;
+        padding: 0.8rem;
+        border: 1px solid variable.$color-black;
+    }
+}

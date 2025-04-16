@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
     <script src="https://kit.fontawesome.com/84a235b10e.js" crossorigin="anonymous"></script>
-    <title>T-virus</title>
+    <title>Devis</title>
 </head>
 <body>
     <header>
@@ -24,7 +24,7 @@
                 </li>
                 <li><a href="">Notre entreprise</a></li>
                 <li class="logo-header">
-                    <img src="assets/img/Logo.png" alt="">
+                    <img src="../../assets/img/Logo.png" alt="">
                   </li>
                 <li><a href="">Nos réseaux</a></li>
                 <li><a href="">Contact</a></li>
@@ -39,6 +39,65 @@
             </div>
         </div>
     </header>
+
+    <main>
+        <section id="devis">
+            <div class="devis__wrapper container">
+                <div class="devis__text">
+                    <h3>Votre demande de devis</h3>
+                    <p>en moins d'une minute</p>
+                </div>
+                <form id="devisform">
+                    <div class="devis__form">
+                        <label>Nom de famille ou raison sociale <span class="star">*</span></label>
+                        <input class="devis__input" type="text" name="nom" required>
+                    </div>
+                    <div class="devis__form">
+                        <label>Prénom <span class="star">*</span></label>
+                        <input class="devis__input" type="text" name="nom" required>
+                    </div>
+                    <div class="devis__form">
+                        <label>Professionnel ou particulier <span class="star">*</span></label>
+                        <select class="devis__input" name="statut" required>
+                            <option value="" disabled selected>Choisissez</option>
+                            <option value="professionnel">Professionnel</option>
+                            <option value="particulier">Particulier</option>
+                        </select>
+                    </div>
+                    <div class="devis__form">
+                        <label>Prestations souhaitées <span class="star">*</span></label>
+                        <select class="devis__input" name="prestation" required>
+                        <option value="" disabled selected>Choisissez</option>
+                        <option value="animation">Mariage</option>
+                        <option value="décoration">Team building</option>
+                        <option value="organisation">Traiteur</option>
+                        <option value="organisation">Anniversaire</option>
+                        <option value="organisation">Baptême</option>
+                        </select>
+                    </div>
+                    <div class="devis__form">
+                        <label>Date de l'événement <span class="star">*</span></label>
+                        <input class="devis__input" type="date" name="date" required>   
+                    </div>
+                    <div class="devis__form">
+                        <label>Nombre d'invités <span class="star">*</span></label>
+                        <input class="devis__input" type="number" name="invites" required>
+                    </div>
+                    <div class="devis__form">
+                        <label>Téléphone <span class="star">*</span></label>
+                        <input class="devis__input" type="phone" name="phone" required>
+                    </div>
+                    <div class="devis__form">
+                        <label>E-mail <span class="star">*</span></label>
+                        <input class="devis__input" type="email" name="email" required>
+                    </div>
+                    <div class="devis__submit">
+                        <button class="submit-btn" type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="footer__wrapper container">
             <div class="contact__wrapper">
@@ -78,7 +137,7 @@
             </div>
             <div class="contact__copy">
                 <div class="logo-footer">
-                    <a href=""><img src="assets/img/Logo.png" alt="Le logo de T-Virus"></a>
+                    <a href=""><img src="../../assets/img/Logo.png" alt="Le logo de T-Virus"></a>
                 </div>
                 <div class="copy__text">
                     <p>&copy Tous droits réservés - T-virus Évènements 2025 - Mentions Légales - Conditions Générales de Vente</p>
@@ -87,6 +146,6 @@
             </div>
         </div>
     </footer>
-    <script src="assets/script.js"></script>
+    <script src="../../assets/script.js"></script>
 </body>
 </html>
