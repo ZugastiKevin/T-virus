@@ -1,0 +1,71 @@
+@use "../abstracts/variables" as variable;
+
+.contact__wrapper {
+    background-color: variable.$color-primary;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .contact-us__wrapper {
+        width: 30%;
+        color: variable.$color-thirdary;
+        .contact__phone, .contact__mail {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            .fa-solid {
+                font-size: 1.3rem;
+            }
+        }
+        .contact__reseaux {
+            font-size: 2rem;
+            margin-top: 8rem;
+            display: flex;
+            gap: 1.3rem;
+            a {
+                color: variable.$color-thirdary;
+            }
+            a:hover {
+                color: variable.$color-black;
+                transform: scale(1.2) rotate(-3deg);
+                transition: all 0.3s ease;
+                text-shadow: 0 0 8px variable.$color-secondary;
+            }
+        }
+    }
+    #contactform {
+        width: 30%;
+        .contact__formulaire {
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+        }
+        .form {
+            border-radius: 10px;
+            padding: 12px 8px;
+            background-color: variable.$color-black;
+            color: variable.$color-thirdary;
+        }
+    }
+}
+.contact__copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .logo-footer a{
+        display: flex;
+        justify-content: center;
+    }
+    img {
+        width: 10%;
+    }
+    img:hover {
+        transform: scale(1.1) rotate(-60deg);
+        transition: all 0.3s ease;
+    }
+    p {
+        color: variable.$color-thirdary;
+        font-size: 0.9rem;
+    }
+}
+

@@ -1,0 +1,9 @@
+@use "../abstracts/variables" as variable;
+.submit-btn {
+    padding: 16px 0px;
+    border-radius: 10px;
+    width: 40%;
+    background-color: variable.$color-black;
+    color: variable.$color-thirdary;
+    cursor: pointer;
+}

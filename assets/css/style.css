@@ -18,6 +18,76 @@
   src: url(../fonts/Figtree/static/Figtree-Light.ttf);
   font-weight: 300;
 }
+.contact__wrapper {
+  background-color: #700C0C;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.contact__wrapper .contact-us__wrapper {
+  width: 30%;
+  color: #727070;
+}
+.contact__wrapper .contact-us__wrapper .contact__phone, .contact__wrapper .contact-us__wrapper .contact__mail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.contact__wrapper .contact-us__wrapper .contact__phone .fa-solid, .contact__wrapper .contact-us__wrapper .contact__mail .fa-solid {
+  font-size: 1.3rem;
+}
+.contact__wrapper .contact-us__wrapper .contact__reseaux {
+  font-size: 2rem;
+  margin-top: 8rem;
+  display: flex;
+  gap: 1.3rem;
+}
+.contact__wrapper .contact-us__wrapper .contact__reseaux a {
+  color: #727070;
+}
+.contact__wrapper .contact-us__wrapper .contact__reseaux a:hover {
+  color: #1C1515;
+  transform: scale(1.2) rotate(-3deg);
+  transition: all 0.3s ease;
+  text-shadow: 0 0 8px #5A0303;
+}
+.contact__wrapper #contactform {
+  width: 30%;
+}
+.contact__wrapper #contactform .contact__formulaire {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.contact__wrapper #contactform .form {
+  border-radius: 10px;
+  padding: 12px 8px;
+  background-color: #1C1515;
+  color: #727070;
+}
+
+.contact__copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__copy .logo-footer a {
+  display: flex;
+  justify-content: center;
+}
+.contact__copy img {
+  width: 10%;
+}
+.contact__copy img:hover {
+  transform: scale(1.1) rotate(-60deg);
+  transition: all 0.3s ease;
+}
+.contact__copy p {
+  color: #727070;
+  font-size: 0.9rem;
+}
+
 header {
   margin-top: 5rem;
 }
@@ -93,6 +163,15 @@ header #search-input {
   border-radius: 18px;
 }
 
+.submit-btn {
+  padding: 16px 0px;
+  border-radius: 10px;
+  width: 40%;
+  background-color: #1C1515;
+  color: #727070;
+  cursor: pointer;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -115,6 +194,12 @@ h1, h2 {
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+h4 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 a {

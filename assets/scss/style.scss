@@ -1,11 +1,11 @@
 // Pages
 
-
-// layout
+//Layouts
+@use "layout/footer";
 @use "layout/header";
 
 // Components
-
+@use "components/button";
 
 // Abstracts
 @use "abstracts/variables";
