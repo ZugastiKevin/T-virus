@@ -346,4 +346,38 @@ img {
   border: 1px solid #1C1515;
 }
 
+.bg-event-mariage {
+  background-image: url(../img/mariageBG.png);
+  background-size: cover;
+}
+
+.bg-event-teams {
+  background-image: url(../img/mainsBG.png);
+  background-size: cover;
+}
+
+.bg-event-traiteur {
+  background-image: url(../img/traiteurBG.png);
+  background-size: cover;
+}
+
+.bg-event-musique {
+  background-image: url(../img/mariageBG.png);
+  background-size: cover;
+}
+
+.bg-event-anniversaire {
+  background-image: url(../img/mariageBG.png);
+  background-size: cover;
+}
+
+.bg-event-bapteme {
+  background-image: url(../img/mariageBG.png);
+  background-size: cover;
+}
+
+#event-title {
+  margin-top: 16rem;
+}
+
 /*# sourceMappingURL=style.css.map */
