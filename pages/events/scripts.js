@@ -4,14 +4,35 @@ const eventTexte = document.querySelector(".event-texte");
 const eventCardsContainer = document.querySelector(".event-cards-container");
 const eventButton = document.querySelector(".event-button");
 
+async function getData(finder) {
+    try {
+        const  reponse = await fetch('event.json');
+        if (!reponse.ok) {
+            throw new Error("La réponse n'est pas OK");
+        }
+        let result = await reponse.json();
+        return result[finder];
+        
+    } catch (error) {
+        console.error("HAAAAAAAA: ", error);
+        
+    };
+};
+
 async function startPage() {
     const params = new URLSearchParams(document.location.search);
-    const  reponse = await fetch('event.json');
-    const events = reponse.json();
+    const finder = params.get("event");
+    const reponse = await getData(finder);
     
-    if (params.get("event") === "mariage") {
-        eventTitle.textContent = events.find("mariage");
-    }
+    eventTitle.textContent = reponse.title;
+    eventSubTitle.textContent = reponse['sub-title'];
+    eventTexte.textContent = reponse.texte;
+    for (i = 0; i < reponse.img.length; i++) {
+        const img = document.createElement("img");
+        img.setAttribute("src", reponse.img[])
+        (reponse.img[i]);
+        
+    };
 };
 
 startPage();
