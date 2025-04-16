@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "ResidentEvil Regular";
   src: url(../fonts/Resident-Evil-7-Regular/Resident\ Evil\ 7\ Regular.otf);
@@ -406,6 +407,70 @@ img {
 .agence__wrapper img {
   border-radius: 16px;
   border: 2px solid #ffffff;
+}
+
+.carousel__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2rem;
+}
+.carousel__wrapper .name-avis {
+  font-weight: 600;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 4rem;
+  animation: scroll 60s linear infinite;
+}
+
+.carousel-row {
+  width: 100%;
+}
+
+/* Pour scroll vers la gauche */
+.left-to-right .carousel-track {
+  animation-name: scroll-left;
+}
+
+/* Pour scroll vers la droite */
+.right-to-left .carousel-track {
+  animation-name: scroll-right;
+}
+
+/* Stop l’animation quand on survole */
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+.carousel-item {
+  flex: 0 0 25%;
+  background-image: url(../../assets/img/gray-texture.jpg);
+  color: #1C1515;
+  padding: 2rem;
+  border-radius: 16px;
+  font-size: 1rem;
+  white-space: normal;
+  box-sizing: border-box;
+}
+
+/* Animations */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
