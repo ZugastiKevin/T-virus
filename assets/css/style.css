@@ -281,6 +281,7 @@ h1, h2 {
   font-size: 6rem;
   font-weight: 500;
   letter-spacing: 1rem;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -325,7 +326,7 @@ img {
   border-radius: 15px;
   background-color: #ffffff;
   color: #1C1515;
-  margin-top: 3rem;
+  margin-top: 16rem;
 }
 .devis__wrapper p {
   color: #727070;
@@ -352,6 +353,39 @@ img {
   border-radius: 15px;
   padding: 0.8rem;
   border: 1px solid #1C1515;
+}
+
+.banner__wrapper {
+  background-image: url(../../assets/img/bg-banner.jpg);
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 110vh;
+  margin-top: -10rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 22rem;
+}
+.banner__wrapper .banner__text {
+  text-align: center;
+  text-shadow: 1px 1px #1C1515;
+}
+.banner__wrapper .banner__cta-primary {
+  width: 10%;
+}
+.banner__wrapper .banner__cta-primary a {
+  display: flex;
+  gap: 1rem;
+  padding: 12px 18px;
+  background-color: #700C0C;
+  border-radius: 16px;
+  align-items: center;
+  margin-top: 10rem;
+  justify-content: center;
+}
+.banner__wrapper .banner__cta-primary .fa-solid {
+  color: yellow;
 }
 
 /*# sourceMappingURL=style.css.map */
