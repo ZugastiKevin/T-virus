@@ -350,12 +350,15 @@ img {
   top: 16rem;
   position: relative;
   background: url("../img/horde rouge.PNG") center/cover no-repeat;
+  height: 20rem;
 }
 .services h2 {
   font-family: "ResidentEvil Regular";
   font-size: 6rem;
   font-weight: 500;
   letter-spacing: 1rem;
+  text-align: center;
+  margin-left: 8rem;
 }
 .services .services-text {
   position: absolute;
@@ -369,17 +372,29 @@ img {
   transition: opacity 0.4s ease;
 }
 
+.services:hover h2 {
+  opacity: 1;
+  animation: right 2s ease 0s 1 normal forwards;
+  text-align: start;
+}
 .services:hover .services-text {
   opacity: 1;
-  animation: myAnim 2s ease 0s 1 normal forwards;
+  animation: right 2s ease 0s 1 normal forwards;
 }
-
-.gradiant:hover {
+.services:hover .gradiant {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(100%);
+}
+.services:hover .gradiant:hover {
   background: #000000;
   background: linear-gradient(90deg, #727070, rgba(255, 255, 255, 0.51) 47%, rgb(255, 255, 255) 100%);
+  transform: translateX(0%);
+  opacity: 1;
 }
 
-@keyframes myAnim {
+@keyframes right {
   0% {
     animation-timing-function: ease-in;
     opacity: 0;
@@ -413,6 +428,18 @@ img {
   100% {
     animation-timing-function: ease-out;
     transform: translateX(0);
+  }
+}
+@keyframes test {
+  0% {
+    opacity: 0;
+    transform: rotateY(70deg);
+    transform-origin: right;
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0);
+    transform-origin: right;
   }
 }
 
