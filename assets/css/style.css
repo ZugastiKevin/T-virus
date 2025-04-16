@@ -289,6 +289,12 @@ h2 {
   letter-spacing: 0.2rem;
 }
 
+h3 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -386,6 +392,20 @@ img {
 }
 .banner__wrapper .banner__cta-primary .fa-solid {
   color: yellow;
+}
+
+.agence__wrapper {
+  display: flex;
+  width: 50%;
+  gap: 6rem;
+}
+.agence__wrapper .agence__text {
+  width: 70%;
+  color: #727070;
+}
+.agence__wrapper img {
+  border-radius: 16px;
+  border: 2px solid #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

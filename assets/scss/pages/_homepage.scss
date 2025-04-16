@@ -32,3 +32,17 @@
         }
     }
 }
+
+.agence__wrapper {
+    display: flex;
+    width: 50%;
+    gap: 6rem;
+    .agence__text {
+        width: 70%;
+        color: variable.$color-thirdary;
+    }
+    img {
+        border-radius: 16px;
+        border: 2px solid variable.$color-white;
+    }
+}
