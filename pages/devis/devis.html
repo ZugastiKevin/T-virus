@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <script src="https://kit.fontawesome.com/84a235b10e.js" crossorigin="anonymous"></script>
+    <title>Devis</title>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <ul class="menu-principal">
+                <li class="dropdown">
+                  <a href="">Événements <i class="fa-solid fa-caret-down"></i></a>
+                  <ul class="sous-menus">
+                    <li><a href="">Mariage</a></li>
+                    <li><a href="">Teams building</a></li>
+                    <li><a href="">Traiteur</a></li>
+                    <li><a href="">Musique, concert</a></li>
+                    <li><a href="">Anniversaire</a></li>
+                    <li><a href="">Bapteme</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Notre entreprise</a></li>
+                <li class="logo-header">
+                    <img src="../../assets/img/Logo.png" alt="">
+                  </li>
+                <li><a href="">Nos réseaux</a></li>
+                <li><a href="">Contact</a></li>
+
+              </ul>
+              
+        </nav>
+        <div id="search-container">
+            <div class="search-wrapper">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="search-input" placeholder="Type d'evenements...">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="devis">
+            <div class="devis__wrapper container">
+                <div class="devis__text">
+                    <h3>Votre demande de devis</h3>
+                    <p>en moins d'une minute</p>
+                </div>
+                <form id="devisform">
+                    <div class="devis__form">
+                        <label>Nom de famille ou raison sociale <span class="star">*</span></label>
+                        <input class="devis__input" type="text" name="nom" required>
+                    </div>
+                    <div class="devis__form">
+                        <label>Prénom <span class="star">*</span></label>
+                        <input class="devis__input" type="text" name="nom" required>
+                    </div>
+                    <div class="devis__form">
+                        <label>Professionnel ou particulier <span class="star">*</span></label>
+                        <select class="devis__input" name="statut" required>
+                            <option value="" disabled selected>Choisissez</option>
+                            <option value="professionnel">Professionnel</option>
+                            <option value="particulier">Particulier</option>
+                        </select>
+                    </div>
+                    <div class="devis__form">
+                        <label>Prestations souhaitées <span class="star">*</span></label>
+                        <select class="devis__input" name="prestation" required>
+                        <option value="" disabled selected>Choisissez</option>
+                        <option value="animation">Mariage</option>
+                        <option value="décoration">Team building</option>
+                        <option value="organisation">Traiteur</option>
+                        <option value="organisation">Anniversaire</option>
+                        <option value="organisation">Baptême</option>
+                        </select>
+                    </div>
+                    <div class="devis__form">
+                        <label>Date de l'événement <span class="star">*</span></label>
+                        <input class="devis__input" type="date" name="date" required>   
+                    </div>
+                    <div class="devis__form">
+                        <label>Nombre d'invités <span class="star">*</span></label>
+                        <input class="devis__input" type="number" name="invites" required>
+                    </div>
+                    <div class="devis__form">
+                        <label>Téléphone <span class="star">*</span></label>
+                        <input class="devis__input" type="phone" name="phone" required>
+                    </div>
+                    <div class="devis__form">
+                        <label>E-mail <span class="star">*</span></label>
+                        <input class="devis__input" type="email" name="email" required>
+                    </div>
+                    <div class="devis__submit">
+                        <button class="submit-btn" type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__wrapper container">
+            <div class="contact__wrapper">
+                <div class="contact-us__wrapper">
+                    <h4>Contactez-nous</h4>
+                    <p>Nous sommes à l'écoute de vos besoins, nous travaillons au cas
+                        par cas  et vous proposons une solution sur mesure. N'hésitez 
+                        pas à nous  contacter par e-mail ou par téléphone, ou à nous
+                        demander directement un devis pour connaître nos tarifs.</p>
+                        <div class="contact__phone">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>Tel : 07 66 23 10 00</p>
+                        </div>  
+                        <div class="contact__mail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>E-mail : contracte-T-virus@event.com</p>
+                        </div>
+
+                        <div class="contact__reseaux">
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                </div>
+
+                <form id="contactform">
+                    <div class="contact__formulaire">
+                            <input class="form" type="text" placeholder="Nom" required>
+                            <input class="form" type="email" placeholder="Email" required>
+                            <input class="form" type="tel" placeholder="Telephone" required>
+                            <textarea class="form" placeholder="Message" rows="5" required></textarea>
+                            <button class="submit-btn" type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+            <div class="contact__copy">
+                <div class="logo-footer">
+                    <a href=""><img src="../../assets/img/Logo.png" alt="Le logo de T-Virus"></a>
+                </div>
+                <div class="copy__text">
+                    <p>&copy Tous droits réservés - T-virus Évènements 2025 - Mentions Légales - Conditions Générales de Vente</p>
+                    <p>L'abus d'alcool est dangereux pour la santé. À consommer avec modération.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../../assets/scripts/footer.js"></script>
+    <script src="../../assets/scripts/devis.js"></script>
+</body>
+</html>

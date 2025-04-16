@@ -1,0 +1,22 @@
+@use "../abstracts/variables" as variable;
+.submit-btn {
+    padding: 16px 0px;
+    border-radius: 10px;
+    width: 40%;
+    background-color: variable.$color-black;
+    color: variable.$color-thirdary;
+    cursor: pointer;
+}
+
+.devis__wrapper {
+    .submit-btn {
+        background-color: variable.$color-primary;
+        border: none;
+        color: variable.$color-white;
+    }
+}
+.submit-btn:hover {
+    background-color: variable.$color-secondary;
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+}

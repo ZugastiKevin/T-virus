@@ -1,23 +1,261 @@
 @font-face {
   font-family: "ResidentEvil Regular";
-  src: url(../../fonts/Resident-Evil-7-Regular/Resident\ Evil\ 7\ Regular.otf);
+  src: url(../fonts/Resident-Evil-7-Regular/Resident\ Evil\ 7\ Regular.otf);
   font-weight: 400;
 }
 @font-face {
   font-family: "Figtree Bold";
-  src: url(../../fonts/Figtree/static/Figtree-Bold.ttf);
+  src: url(../fonts/Figtree/static/Figtree-Bold.ttf);
   font-weight: 700;
 }
 @font-face {
   font-family: "Figtree Regular";
-  src: url(../../fonts/Figtree/static/Figtree-Regular.ttf);
+  src: url(../fonts/Figtree/static/Figtree-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: "Figtree Light";
-  src: url(../../fonts/Figtree/static/Figtree-Light.ttf);
+  src: url(../fonts/Figtree/static/Figtree-Light.ttf);
   font-weight: 300;
 }
+.contact__wrapper {
+  background-color: #700C0C;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.contact__wrapper .contact-us__wrapper {
+  width: 30%;
+  color: #727070;
+}
+.contact__wrapper .contact-us__wrapper .contact__phone, .contact__wrapper .contact-us__wrapper .contact__mail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.contact__wrapper .contact-us__wrapper .contact__phone .fa-solid, .contact__wrapper .contact-us__wrapper .contact__mail .fa-solid {
+  font-size: 1.3rem;
+}
+.contact__wrapper .contact-us__wrapper .contact__reseaux {
+  font-size: 2rem;
+  margin-top: 8rem;
+  display: flex;
+  gap: 1.3rem;
+}
+.contact__wrapper .contact-us__wrapper .contact__reseaux a {
+  color: #727070;
+}
+.contact__wrapper .contact-us__wrapper .contact__reseaux a:hover {
+  color: #1C1515;
+  transform: scale(1.2) rotate(-3deg);
+  transition: all 0.3s ease;
+  text-shadow: 0 0 8px #5A0303;
+}
+.contact__wrapper #contactform {
+  width: 30%;
+}
+.contact__wrapper #contactform .contact__formulaire {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.contact__wrapper #contactform .form {
+  border-radius: 10px;
+  padding: 12px 8px;
+  background-color: #1C1515;
+  color: #727070;
+}
+
+.contact__copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__copy .logo-footer a {
+  display: flex;
+  justify-content: center;
+}
+.contact__copy img {
+  width: 10%;
+  transform: scale(1) rotate(0deg);
+  transition: all 0.3s ease;
+}
+.contact__copy img:hover {
+  transform: scale(1.1) rotate(-60deg);
+  transition: all 0.3s ease;
+}
+.contact__copy p {
+  color: #727070;
+  font-size: 0.9rem;
+}
+
+header {
+  margin-top: 5rem;
+}
+header nav {
+  background-color: #700C0C;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 18px;
+}
+header nav .menu-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5rem;
+  list-style: none;
+  position: relative;
+  padding: 0;
+}
+header nav .menu-principal > li {
+  font-size: x-large;
+  position: relative;
+  padding: 10px;
+}
+header nav .menu-principal > li img {
+  transform: scale(1) rotate(0deg);
+  transition: all 0.3s ease;
+}
+header nav .menu-principal > li img:hover {
+  transform: scale(1.1) rotate(-60deg);
+  transition: all 0.3s ease;
+}
+header nav .sous-menus {
+  position: absolute;
+  background-color: #700C0C;
+  border-radius: 18px;
+  margin-top: 0.5rem;
+  box-shadow: 5px 20px 50px rgba(0, 0, 0, 0.1);
+  transition: 0.3s all ease-in-out;
+  transform: scaley(0);
+  border: 0.5px solid black;
+}
+header nav .sous-menus li a {
+  color: white;
+}
+header nav .sous-menus li:hover {
+  background-color: black;
+  border-radius: 18px;
+}
+header nav .dropdown:hover .sous-menus {
+  display: block;
+  transform: scaley(1);
+}
+header nav .sous-menus li {
+  padding: 10px;
+  white-space: nowrap;
+}
+header nav .logo-header img {
+  width: 80px;
+}
+header #search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+header .search-wrapper {
+  position: relative;
+  background-color: #700C0C;
+  border-radius: 18px;
+  padding: 1rem;
+}
+header .search-wrapper.compact:not(.active) {
+  padding: 1rem;
+}
+header .search-wrapper.compact:not(.active) #search-input {
+  width: 0;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  pointer-events: none;
+}
+header .search-wrapper.compact {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 52px;
+}
+header .search-wrapper i {
+  position: absolute;
+  left: 10px;
+  top: 40%;
+  transform: translateY(60%);
+  transform: translateX(80%);
+  color: #727070;
+}
+header #search-input {
+  padding-left: 30px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 18px;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  from {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+.search-wrapper.compact.active #search-input {
+  height: 45px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.search-wrapper.compact.active {
+  width: auto;
+}
+
+.submit-btn {
+  padding: 16px 0px;
+  border-radius: 10px;
+  width: 40%;
+  background-color: #1C1515;
+  color: #727070;
+  cursor: pointer;
+}
+
+.devis__wrapper .submit-btn {
+  background-color: #700C0C;
+  border: none;
+  color: #ffffff;
+}
+
+.submit-btn:hover {
+  background-color: #5A0303;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -26,6 +264,7 @@ body {
   font-family: "Figtree Regular";
   margin: 0;
   background-color: #1C1515;
+  color: white;
 }
 
 section {
@@ -36,9 +275,70 @@ h1, h2 {
   font-family: "ResidentEvil Regular";
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h4 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
+}
+
+.devis__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 30%;
+  border: solid 3px #727070;
+  padding: 2rem 4rem;
+  border-radius: 15px;
+  background-color: #ffffff;
+  color: #1C1515;
+  margin-top: 3rem;
+}
+.devis__wrapper p {
+  color: #727070;
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+.devis__wrapper h3 {
+  margin-bottom: 0;
+}
+.devis__wrapper .devis__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.devis__wrapper .star {
+  color: #700C0C;
+}
+.devis__wrapper .devis__submit {
+  text-align: center;
+  margin-top: 3rem;
+}
+.devis__wrapper .devis__input {
+  border-radius: 15px;
+  padding: 0.8rem;
+  border: 1px solid #1C1515;
 }
 
 /*# sourceMappingURL=style.css.map */
