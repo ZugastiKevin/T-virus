@@ -94,6 +94,10 @@ header {
   margin-top: 5rem;
 }
 header nav {
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%);
   background-color: #700C0C;
   padding-left: 5rem;
   padding-right: 5rem;
@@ -158,7 +162,8 @@ header #search-container {
   gap: 10px;
 }
 header .search-wrapper {
-  position: relative;
+  position: absolute;
+  top: 14rem;
   background-color: #700C0C;
   border-radius: 18px;
   padding: 1rem;
@@ -175,7 +180,7 @@ header .search-wrapper.compact:not(.active) #search-input {
 }
 header .search-wrapper.compact {
   position: fixed;
-  top: 0;
+  top: 14rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
