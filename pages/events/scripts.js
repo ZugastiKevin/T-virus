@@ -4,13 +4,14 @@ const eventTexte = document.querySelector(".event-texte");
 const eventCardsContainer = document.querySelector(".event-cards-container");
 const eventButton = document.querySelector(".event-button");
 
-function startPage() {
+async function startPage() {
     const params = new URLSearchParams(document.location.search);
-    console.log(params.get("event"));
+    const  reponse = await fetch('event.json');
+    const events = reponse.json();
     
-    //if (params.get("event") === "mariage") {
-        //eventTitle.textContent = events["mariage"][0];
-    //}
+    if (params.get("event") === "mariage") {
+        eventTitle.textContent = events.find("mariage");
+    }
 };
 
 startPage();
