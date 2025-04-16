@@ -29,9 +29,9 @@ async function startPage() {
     eventTexte.textContent = reponse.texte;
     for (i = 0; i < reponse.img.length; i++) {
         const img = document.createElement("img");
-        img.setAttribute("src", reponse.img[])
-        (reponse.img[i]);
-        
+        img.setAttribute("src", reponse.img[i].src)
+        img.setAttribute("alt", reponse.img[i].alt)
+        eventCardsContainer.append(img);
     };
 };
 

@@ -9,11 +9,14 @@
             "title": "Teams bulding",
             "sub-title": "Renforcez vos liens avant qu’ils ne se déchirent.",
             "texte": "Renforcer les liens au sein d’un groupe, c’est comme survivre à une pandémie : il faut de la coordination, de la communication… et une bonne dose d’instinct. Chez T-Virus, nous organisons des journées de team building conçues comme des simulations de terrain. Objectif : tester vos réflexes, réveiller votre esprit d’équipe, et repousser les limites du connu — toujours dans un cadre sécurisé… pour le moment. Escape games en zone contaminée, missions coopératives, ateliers tactiques ou défis physiques… chaque scénario est calibré selon vos objectifs : synergie, leadership, ou simplement relâchement après une campagne intense. Vos collaborateurs apprendront à mieux se connaître, à se couvrir mutuellement… et à s’unir face à l’imprévu. Parce que dans l’univers T-Virus, on ne survit jamais seul.",
-            "img": {
-                "id": ,
-                "src": "../../assets/img/logo", 
-                "alt": "je suis une photo"
+            "img": [{
+                        "src": "../../assets/img/logo", 
+                        "alt": "je suis une photo"
+                },{
+                        "src": "../../assets/img/logo", 
+                        "alt": "je suis une photo2"
                 }
+                ]
     },
     "traiteur":{
             "title": "Traiteur",
