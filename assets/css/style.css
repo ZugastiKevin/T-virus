@@ -388,4 +388,63 @@ img {
   color: yellow;
 }
 
+body {
+  position: relative;
+}
+
+#background {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.bg-event-mariage {
+  background-image: url(../img/mariageBG.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 20%;
+}
+
+.bg-event-teams {
+  background-image: url(../img/mainsBG.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-event-traiteur {
+  background-image: url(../img/traiteurBG.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-event-musique {
+  background-image: url(../img/mariageBG.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-event-anniversaire {
+  background-image: url(../img/mariageBG.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-event-bapteme {
+  background-image: url(../img/mariageBG.png);
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  margin-top: 16rem;
+  text-align: center;
+}
+
+h2 {
+  margin: 2.5rem 0;
+}
+
 /*# sourceMappingURL=style.css.map */

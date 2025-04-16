@@ -1,4 +1,4 @@
-const courgette = document.querySelector("body");
+const courgette = document.querySelector("#background");
 const eventTitle = document.querySelector(".event-title");
 const eventSubTitle = document.querySelector(".event-sub-title");
 const eventTexte = document.querySelector(".event-texte");
