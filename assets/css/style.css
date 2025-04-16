@@ -78,6 +78,8 @@
 }
 .contact__copy img {
   width: 10%;
+  transform: scale(1) rotate(0deg);
+  transition: all 0.3s ease;
 }
 .contact__copy img:hover {
   transform: scale(1.1) rotate(-60deg);
@@ -113,21 +115,34 @@ header nav .menu-principal > li {
   position: relative;
   padding: 10px;
 }
+header nav .menu-principal > li img {
+  transform: scale(1) rotate(0deg);
+  transition: all 0.3s ease;
+}
+header nav .menu-principal > li img:hover {
+  transform: scale(1.1) rotate(-60deg);
+  transition: all 0.3s ease;
+}
 header nav .sous-menus {
-  display: none;
   position: absolute;
   background-color: #700C0C;
-  margin: 1rem;
   border-radius: 18px;
+  margin-top: 0.5rem;
+  box-shadow: 5px 20px 50px rgba(0, 0, 0, 0.1);
+  transition: 0.3s all ease-in-out;
+  transform: scaley(0);
+  border: 0.5px solid black;
 }
 header nav .sous-menus li a {
   color: white;
 }
 header nav .sous-menus li:hover {
   background-color: black;
+  border-radius: 18px;
 }
 header nav .dropdown:hover .sous-menus {
   display: block;
+  transform: scaley(1);
 }
 header nav .sous-menus li {
   padding: 10px;
@@ -148,6 +163,25 @@ header .search-wrapper {
   border-radius: 18px;
   padding: 1rem;
 }
+header .search-wrapper.compact:not(.active) {
+  padding: 1rem;
+}
+header .search-wrapper.compact:not(.active) #search-input {
+  width: 0;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  pointer-events: none;
+}
+header .search-wrapper.compact {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 52px;
+}
 header .search-wrapper i {
   position: absolute;
   left: 10px;
@@ -161,6 +195,44 @@ header #search-input {
   height: 30px;
   font-size: 14px;
   border-radius: 18px;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  from {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+.search-wrapper.compact.active #search-input {
+  height: 45px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.search-wrapper.compact.active {
+  width: auto;
 }
 
 .submit-btn {
@@ -196,15 +268,15 @@ ul {
   padding-left: 0;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 h4 {
   font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 400;
-}
-
-a {
-  text-decoration: none;
-  color: white;
 }
 
 img {

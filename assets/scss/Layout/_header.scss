@@ -17,35 +17,55 @@ header {
             list-style: none;
             position: relative;
             padding: 0;
+
           }
           
           .menu-principal > li {
             font-size: x-large;
             position: relative;
             padding: 10px;
+            img {
+              transform: scale(1) rotate(0deg);
+              transition: all 0.3s ease;
+            }
+            img:hover {
+              transform: scale(1.1) rotate(-60deg);
+              transition: all 0.3s ease;
+          }
           }
 
           .sous-menus {
-            display: none;
+
             position: absolute;
             background-color: variable.$color-primary;
-            margin: 1rem;
             border-radius: 18px;
+            margin-top: 0.5rem;
+            box-shadow: 5px 20px 50px rgba(0, 0, 0, 0.1);
+            transition: 0.3s all ease-in-out;
+            transform: scaley(0);
+            border: 0.5px solid black;
+
             li a{
                 color: white;
             }
             li:hover{
                 background-color: black;
+                border-radius: 18px;
+
+
             }
           }
 
           .dropdown:hover .sous-menus {
             display: block;
+            
+            transform: scaley(1);
           }
 
           .sous-menus li {
             padding: 10px;
             white-space: nowrap;
+            
           }
           
           .logo-header img {
@@ -71,6 +91,31 @@ header {
 
 
   }
+  .search-wrapper.compact:not(.active) {
+    padding: 1rem;
+
+  
+    #search-input {
+      width: 0;
+      opacity: 0;
+      padding: 0;
+      margin: 0;
+      pointer-events: none;
+    }
+  }
+  .search-wrapper.compact {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 52px;
+    
+    
+    
+
+  }
   
   .search-wrapper i {
     position: absolute;
@@ -92,4 +137,28 @@ header {
   }
   
 
+}
+@keyframes slideDown {
+  from { transform: translate(-50%, -100%); opacity: 0; }
+  to { transform: translate(-50%, 0); opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translate(-50%, 0); opacity: 1; }
+  to { transform: translate(-50%, -100%); opacity: 0; }
+}
+@keyframes slideIn {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+.search-wrapper.compact.active #search-input {
+ 
+  height: 45px;       
+  border-radius: 8px; 
+  transition: all 0.3s ease; 
+  
+}
+.search-wrapper.compact.active {
+  width: auto;
 }
