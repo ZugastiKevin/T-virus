@@ -10,21 +10,34 @@
 <body>
     <header>
         <nav class="container">
-            <ul>
-                <li>Evenements</li>
-                <li>Notre entreprise</li>
-                <div class="logo-header">
-                    <img src="assets\img\Logo.png" alt="">
-                </div>
-                <li>Nos reseaux</li>
-                <li>Contact</li>
-            </ul>
-            <div id="search-container">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" id="search-input" placeholder="Recherche...">
-                <button onclick="search()">Rechercher</button>
-            </div>
+            <ul class="menu-principal">
+                <li class="dropdown">
+                  <a href="">Événements <i class="fa-solid fa-caret-down"></i></a>
+                  <ul class="sous-menus">
+                    <li><a href="">Mariage</a></li>
+                    <li><a href="">Teams building</a></li>
+                    <li><a href="">Traiteur</a></li>
+                    <li><a href="">Musique, concert</a></li>
+                    <li><a href="">Anniversaire</a></li>
+                    <li><a href="">Bapteme</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Notre entreprise</a></li>
+                <li class="logo-header">
+                    <img src="assets/img/Logo.png" alt="">
+                  </li>
+                <li><a href="">Nos réseaux</a></li>
+                <li><a href="">Contact</a></li>
+
+              </ul>
+              
         </nav>
+        <div id="search-container">
+            <div class="search-wrapper">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="search-input" placeholder="Type d'evenements...">
+            </div>
+        </div>
     </header>
     <script src="scripts.js"></script>
 </body>

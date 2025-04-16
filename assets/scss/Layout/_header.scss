@@ -9,41 +9,87 @@ header {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
         border-radius: 18px;
-
-        ul {
+        .menu-principal {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            .logo-header {
-                width: 5%;
-        
-            }
-        }
-        #search-container {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-          }
-          
-          .search-wrapper {
+            margin-right: 5rem;
+            list-style: none;
             position: relative;
+            padding: 0;
           }
           
-          .search-wrapper i {
+          .menu-principal > li {
+            font-size: x-large;
+            position: relative;
+            padding: 10px;
+          }
+
+          .sous-menus {
+            display: none;
             position: absolute;
-            left: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #888;
+            background-color: variable.$color-primary;
+            margin: 1rem;
+            border-radius: 18px;
+            li a{
+                color: white;
+            }
+            li:hover{
+                background-color: black;
+            }
+          }
+
+          .dropdown:hover .sous-menus {
+            display: block;
+          }
+
+          .sous-menus li {
+            padding: 10px;
+            white-space: nowrap;
           }
           
-          #search-input {
-            padding-left: 30px;
-            height: 30px;
-            font-size: 14px;
+          .logo-header img {
+            width: 80px;
           }
           
-        
-}
+       
+} #search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+
+  }
+  
+  .search-wrapper {
+    position: relative;
+    background-color: variable.$color-primary;
+    border-radius: 18px;
+    padding: 1rem;
+
+
+
+  }
+  
+  .search-wrapper i {
+    position: absolute;
+    left: 10px;
+    top: 40%;
+    transform: translateY(60%);
+    transform: translateX(80%);
+    color: variable.$color-thirdary;
+
+
+  }
+  
+  #search-input {
+    padding-left: 30px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 18px;
+
+  }
+  
 
 }

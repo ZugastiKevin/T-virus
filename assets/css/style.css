@@ -29,33 +29,68 @@ header nav {
   padding-bottom: 0.5rem;
   border-radius: 18px;
 }
-header nav ul {
+header nav .menu-principal {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 5rem;
+  list-style: none;
+  position: relative;
+  padding: 0;
 }
-header nav ul .logo-header {
-  width: 5%;
+header nav .menu-principal > li {
+  font-size: x-large;
+  position: relative;
+  padding: 10px;
 }
-header nav #search-container {
+header nav .sous-menus {
+  display: none;
+  position: absolute;
+  background-color: #700C0C;
+  margin: 1rem;
+  border-radius: 18px;
+}
+header nav .sous-menus li a {
+  color: white;
+}
+header nav .sous-menus li:hover {
+  background-color: black;
+}
+header nav .dropdown:hover .sous-menus {
+  display: block;
+}
+header nav .sous-menus li {
+  padding: 10px;
+  white-space: nowrap;
+}
+header nav .logo-header img {
+  width: 80px;
+}
+header #search-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
-header nav .search-wrapper {
+header .search-wrapper {
   position: relative;
+  background-color: #700C0C;
+  border-radius: 18px;
+  padding: 1rem;
 }
-header nav .search-wrapper i {
+header .search-wrapper i {
   position: absolute;
   left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #888;
+  top: 40%;
+  transform: translateY(60%);
+  transform: translateX(80%);
+  color: #727070;
 }
-header nav #search-input {
+header #search-input {
   padding-left: 30px;
   height: 30px;
   font-size: 14px;
+  border-radius: 18px;
 }
 
 * {
@@ -80,6 +115,11 @@ h1, h2 {
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 img {
