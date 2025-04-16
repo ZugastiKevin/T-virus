@@ -495,43 +495,33 @@ body {
   height: 100%;
   top: 0;
   left: 0;
+  opacity: 20%;
+  background-size: cover;
+  background-position: center;
 }
 
 .bg-event-mariage {
   background-image: url(../img/mariageBG.png);
-  background-size: cover;
-  background-position: center;
-  opacity: 20%;
 }
 
 .bg-event-teams {
   background-image: url(../img/mainsBG.png);
-  background-size: cover;
-  background-position: center;
 }
 
 .bg-event-traiteur {
   background-image: url(../img/traiteurBG.png);
-  background-size: cover;
-  background-position: center;
 }
 
 .bg-event-musique {
   background-image: url(../img/mariageBG.png);
-  background-size: cover;
-  background-position: center;
 }
 
 .bg-event-anniversaire {
   background-image: url(../img/mariageBG.png);
-  background-size: cover;
-  background-position: center;
 }
 
 .bg-event-bapteme {
   background-image: url(../img/mariageBG.png);
-  background-size: cover;
-  background-position: center;
 }
 
 main {
