@@ -37,6 +37,9 @@
     display: flex;
     width: 50%;
     gap: 6rem;
+    h3 {
+      color: variable.$color-white;
+    }
     .agence__text {
         width: 70%;
         color: variable.$color-thirdary;
@@ -47,60 +50,125 @@
     }
 }
 
+// .carousel__wrapper {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 4rem;
+//     padding: 2rem;
+//     overflow: hidden;
+//     .name-avis {
+//         font-weight: 600;
+//     }
+//   }
+  
+//   .carousel-track {
+//     display: flex;
+//     animation: scroll 5s linear infinite;
+//   }
+  
+//   .carousel-row {
+//     width: 100%;
+//   }
+  
+//   /* Pour scroll vers la gauche */
+//   .left-to-right .carousel-track {
+//     animation-name: scroll-left;
+//   }
+  
+//   /* Pour scroll vers la droite */
+//   .right-to-left .carousel-track {
+//     animation-name: scroll-right;
+//   }
+  
+//   /* Stop l’animation quand on survole */
+//   .carousel-track:hover {
+//     animation-play-state: paused;
+//   }
+  
+//   .carousel-item {
+//     flex: 0 0 25%;
+//     background-image: url(../../assets/img/gray-texture.jpg);
+//     color: variable.$color-black;
+//     padding: 2rem;
+//     border-radius: 16px;
+//     font-size: 1rem;
+//     white-space: normal;
+//     box-sizing: border-box;
+//     flex-shrink: 0;
+//   }
+  
+//   /* Animations */
+//   @keyframes scroll-left {
+//     0% { transform: translateX(0); }
+//     100% { transform: translateX(-50%); } //fait un calc pour que ça marche +2rem
+//   }
+  
+//   @keyframes scroll-right {
+//     0% { transform: translateX(-50%); }
+//     100% { transform: translateX(0); }
+//   }
+
 .carousel__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    padding: 2rem;
-    .name-avis {
-        font-weight: 600;
-    }
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2rem;
+  overflow: hidden;
+  .name-avis {
+    font-weight: 600;
   }
-  
-  .carousel-track {
-    display: flex;
-    gap: 4rem;
-    animation: scroll 60s linear infinite;
+}
+
+.carousel-row {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll-left 20s linear infinite;
+}
+
+.left-to-right .carousel-track {
+  animation-name: scroll-left;
+}
+
+.right-to-left .carousel-track {
+  animation-name: scroll-right;
+}
+
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+.carousel-item {
+  flex: none;
+  width: 25%;
+  margin-right: 4rem;
+  color: variable.$color-black;
+  background-image: url(../../assets/img/gray-texture.jpg);
+  padding: 2rem;
+  border-radius: 16px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  white-space: normal;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
   }
-  
-  .carousel-row {
-    width: 100%;
+  100% {
+    transform: translateX(calc(-50% - 8rem));
   }
-  
-  /* Pour scroll vers la gauche */
-  .left-to-right .carousel-track {
-    animation-name: scroll-left;
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(calc(-50% - 8rem));
   }
-  
-  /* Pour scroll vers la droite */
-  .right-to-left .carousel-track {
-    animation-name: scroll-right;
+  100% {
+    transform: translateX(0);
   }
-  
-  /* Stop l’animation quand on survole */
-  .carousel-track:hover {
-    animation-play-state: paused;
-  }
-  
-  .carousel-item {
-    flex: 0 0 25%;
-    background-image: url(../../assets/img/gray-texture.jpg);
-    color: variable.$color-black;
-    padding: 2rem;
-    border-radius: 16px;
-    font-size: 1rem;
-    white-space: normal;
-    box-sizing: border-box;
-  }
-  
-  /* Animations */
-  @keyframes scroll-left {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-  
-  @keyframes scroll-right {
-    0% { transform: translateX(-50%); }
-    100% { transform: translateX(0); }
-  }
+}
 
