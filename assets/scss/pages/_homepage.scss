@@ -49,109 +49,63 @@
         border: 2px solid variable.$color-white;
     }
 }
+//CARROUSSEL AVIS
 
-// .carousel__wrapper {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 4rem;
-//     padding: 2rem;
-//     overflow: hidden;
-//     .name-avis {
-//         font-weight: 600;
-//     }
-//   }
-  
-//   .carousel-track {
-//     display: flex;
-//     animation: scroll 5s linear infinite;
-//   }
-  
-//   .carousel-row {
-//     width: 100%;
-//   }
-  
-//   /* Pour scroll vers la gauche */
-//   .left-to-right .carousel-track {
-//     animation-name: scroll-left;
-//   }
-  
-//   /* Pour scroll vers la droite */
-//   .right-to-left .carousel-track {
-//     animation-name: scroll-right;
-//   }
-  
-//   /* Stop l’animation quand on survole */
-//   .carousel-track:hover {
-//     animation-play-state: paused;
-//   }
-  
-//   .carousel-item {
-//     flex: 0 0 25%;
-//     background-image: url(../../assets/img/gray-texture.jpg);
-//     color: variable.$color-black;
-//     padding: 2rem;
-//     border-radius: 16px;
-//     font-size: 1rem;
-//     white-space: normal;
-//     box-sizing: border-box;
-//     flex-shrink: 0;
-//   }
-  
-//   /* Animations */
-//   @keyframes scroll-left {
-//     0% { transform: translateX(0); }
-//     100% { transform: translateX(-50%); } //fait un calc pour que ça marche +2rem
-//   }
-  
-//   @keyframes scroll-right {
-//     0% { transform: translateX(-50%); }
-//     100% { transform: translateX(0); }
-//   }
+#avis {
+  padding: 2rem;
+  background-color: #111;
+  color: #eee;
+  font-family: sans-serif;
+  overflow: hidden;
+}
 
 .carousel__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-  padding: 2rem;
-  overflow: hidden;
-  .name-avis {
-    font-weight: 600;
-  }
+  gap: 2rem;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
 }
 
 .carousel-row {
-  width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .carousel-track {
   display: flex;
-  animation: scroll-left 20s linear infinite;
+  width: max-content;
+  animation: scroll-left 30s linear infinite;
 }
 
-.left-to-right .carousel-track {
-  animation-name: scroll-left;
+.carousel-row.right-to-left .carousel-track {
+  animation: scroll-right 30s linear infinite;
 }
 
-.right-to-left .carousel-track {
-  animation-name: scroll-right;
-}
-
-.carousel-track:hover {
+.carousel-row:hover .carousel-track {
   animation-play-state: paused;
 }
 
 .carousel-item {
-  flex: none;
-  width: 25%;
-  margin-right: 4rem;
+  flex: 0 0 auto;
+  width: 400px;
+  margin: 0 2rem;
+  background-image: url(/assets/img/gray-texture.jpg);
   color: variable.$color-black;
-  background-image: url(../../assets/img/gray-texture.jpg);
-  padding: 2rem;
-  border-radius: 16px;
-  font-size: 1rem;
-  box-sizing: border-box;
-  white-space: normal;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+.name-avis {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: italic;
+  font-weight: 600;
 }
 
 @keyframes scroll-left {
@@ -159,16 +113,32 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-50% - 8rem));
+    transform: translateX(-50%);
   }
 }
 
 @keyframes scroll-right {
   0% {
-    transform: translateX(calc(-50% - 8rem));
+    transform: translateX(-50%);
   }
   100% {
     transform: translateX(0);
   }
+}
+
+
+.stars__wrapper {
+  #stars__affiche {
+    display: flex;
+    gap: 4rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  li img {
+    width: 100%;
+    height: 100%;
+    display: block;  
+  }
+
 }
 
