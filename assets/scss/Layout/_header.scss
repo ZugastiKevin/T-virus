@@ -33,6 +33,11 @@ header {
       position: relative;
       padding: 0;
       margin-right: 0;
+      a:hover {
+        background: linear-gradient(90deg, #727070, #ffffff, #727070);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
        li {
         font-size: x-large;
         position: relative;

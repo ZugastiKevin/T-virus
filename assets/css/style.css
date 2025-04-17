@@ -123,6 +123,11 @@ header nav .menu-principal {
   padding: 0;
   margin-right: 0;
 }
+header nav .menu-principal a:hover {
+  background: linear-gradient(90deg, #727070, #ffffff, #727070);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 header nav .menu-principal li {
   font-size: x-large;
   position: relative;
@@ -395,71 +400,7 @@ img {
   margin-top: 20rem;
 }
 
-.services-2 {
-  overflow: hidden;
-  border-radius: 12px;
-  cursor: pointer;
-  perspective: 800px;
-  transform-style: preserve-3d;
-  transition: transform 0.5s ease;
-  background: url("/assets/img/team/Meeting.png") center/cover no-repeat;
-  background-position-y: -5rem;
-  height: 20rem;
-  margin-top: 5rem;
-}
-.services-2 h2 {
-  font-family: "ResidentEvil Regular";
-  font-size: 6rem;
-  letter-spacing: 1rem;
-  color: white;
-  position: absolute;
-  top: 10%;
-  left: 60%;
-  transform: translate(-80%);
-  opacity: 1;
-  transition: transform 0.6s ease;
-  white-space: nowrap;
-  text-align: center;
-  z-index: 2;
-}
-.services-2 .gradiant {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: center/cover no-repeat, linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
-  transform: translateX(-100%);
-  opacity: 0;
-  transition: transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease;
-  filter: brightness(0.8);
-}
-.services-2 .services-text {
-  position: relative;
-  opacity: 0;
-  width: 50%;
-  transform: translateX(50px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-  left: 2rem;
-  top: 5rem;
-}
-.services-2:hover .gradiant {
-  transform: translateX(0);
-  opacity: 1;
-  filter: brightness(1);
-}
-.services-2:hover h2 {
-  opacity: 1;
-  transform: translateX(0);
-  transition-delay: 0.3s;
-}
-.services-2:hover .services-text {
-  opacity: 1;
-  transform: translateX(0);
-  transition-delay: 0.6s;
-}
-
-.services-3 {
+.Mariages {
   overflow: hidden;
   border-radius: 12px;
   cursor: pointer;
@@ -471,7 +412,7 @@ img {
   height: 20rem;
   margin-top: 5rem;
 }
-.services-3 h2 {
+.Mariages h2 {
   font-family: "ResidentEvil Regular";
   font-size: 6rem;
   letter-spacing: 1rem;
@@ -486,10 +427,10 @@ img {
   text-align: center;
   z-index: 2;
 }
-.services-3:hover h2 {
-  transform: translate(-230%);
+.Mariages:hover h2 {
+  transform: translate(-160%);
 }
-.services-3 .gradiant {
+.Mariages .gradiant {
   position: absolute;
   inset: 0;
   background: linear-gradient(270deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
@@ -500,7 +441,7 @@ img {
   transition: transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease;
   z-index: 1;
 }
-.services-3 .services-text {
+.Mariages .services-text {
   position: absolute;
   top: 5rem;
   right: 2rem;
@@ -511,44 +452,44 @@ img {
   color: white;
   z-index: 2;
 }
-.services-3:hover .gradiant {
+.Mariages:hover .gradiant {
   transform: translateX(0);
   opacity: 1;
   filter: brightness(1);
 }
-.services-3:hover .services-text {
+.Mariages:hover .services-text {
   transform: translateX(0);
   opacity: 1;
 }
 
-.services-4 {
+.Team {
   overflow: hidden;
   border-radius: 12px;
   cursor: pointer;
   perspective: 800px;
   transform-style: preserve-3d;
   transition: transform 0.5s ease;
-  background: url("/assets/img/concert/groupe metal banniere.png") center/cover no-repeat;
-  background-position-y: -10rem;
+  background: url("/assets/img/team/Meeting.png") center/cover no-repeat;
+  background-position-y: -5rem;
   height: 20rem;
   margin-top: 5rem;
 }
-.services-4 h2 {
+.Team h2 {
   font-family: "ResidentEvil Regular";
-  font-size: 3.5rem;
+  font-size: 6rem;
   letter-spacing: 1rem;
   color: white;
   position: absolute;
   top: 10%;
-  left: 65%;
+  left: 60%;
   transform: translate(-80%);
   opacity: 1;
   transition: transform 0.6s ease;
-  white-space: nowrap;
+  white-space: normal;
   text-align: center;
   z-index: 2;
 }
-.services-4 .gradiant {
+.Team .gradiant {
   position: absolute;
   top: 0;
   left: 0;
@@ -560,7 +501,7 @@ img {
   transition: transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease;
   filter: brightness(0.8);
 }
-.services-4 .services-text {
+.Team .services-text {
   position: relative;
   opacity: 0;
   width: 50%;
@@ -569,35 +510,35 @@ img {
   left: 2rem;
   top: 5rem;
 }
-.services-4:hover .gradiant {
+.Team:hover .gradiant {
   transform: translateX(0);
   opacity: 1;
   filter: brightness(1);
 }
-.services-4:hover h2 {
+.Team:hover h2 {
   opacity: 1;
-  transform: translateX(-20%);
+  transform: translateX(0);
   transition-delay: 0.3s;
 }
-.services-4:hover .services-text {
+.Team:hover .services-text {
   opacity: 1;
   transform: translateX(0);
   transition-delay: 0.6s;
 }
 
-.services-5 {
+.Traiteur {
   overflow: hidden;
   border-radius: 12px;
   cursor: pointer;
   perspective: 800px;
   transform-style: preserve-3d;
   transition: transform 0.5s ease;
-  background: url("/assets/img/anniverssaire/Birthdat banniere.png") center/cover no-repeat;
-  background-position-y: -20rem;
+  background: url("/assets/img/traiteur/Traiteur paysage 2.png") center/cover no-repeat;
+  background-position-y: -10rem;
   height: 20rem;
   margin-top: 5rem;
 }
-.services-5 h2 {
+.Traiteur h2 {
   font-family: "ResidentEvil Regular";
   font-size: 6rem;
   letter-spacing: 1rem;
@@ -612,10 +553,10 @@ img {
   text-align: center;
   z-index: 2;
 }
-.services-5:hover h2 {
-  transform: translate(-150%);
+.Traiteur:hover h2 {
+  transform: translate(-180%);
 }
-.services-5 .gradiant {
+.Traiteur .gradiant {
   position: absolute;
   inset: 0;
   background: linear-gradient(270deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
@@ -626,7 +567,7 @@ img {
   transition: transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease;
   z-index: 1;
 }
-.services-5 .services-text {
+.Traiteur .services-text {
   position: absolute;
   top: 5rem;
   right: 2rem;
@@ -637,17 +578,143 @@ img {
   color: white;
   z-index: 2;
 }
-.services-5:hover .gradiant {
+.Traiteur:hover .gradiant {
   transform: translateX(0);
   opacity: 1;
   filter: brightness(1);
 }
-.services-5:hover .services-text {
+.Traiteur:hover .services-text {
   transform: translateX(0);
   opacity: 1;
 }
 
-.services-6 {
+.Musique {
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  background: url("/assets/img/concert/groupe metal banniere.png") center/cover no-repeat;
+  background-position-y: -10rem;
+  height: 20rem;
+  margin-top: 5rem;
+}
+.Musique h2 {
+  font-family: "ResidentEvil Regular";
+  font-size: 3.5rem;
+  letter-spacing: 1rem;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 65%;
+  transform: translate(-80%);
+  opacity: 1;
+  transition: transform 0.6s ease;
+  white-space: normal;
+  text-align: center;
+  z-index: 2;
+}
+.Musique .gradiant {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: center/cover no-repeat, linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease;
+  filter: brightness(0.8);
+}
+.Musique .services-text {
+  position: relative;
+  opacity: 0;
+  width: 50%;
+  transform: translateX(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  left: 2rem;
+  top: 5rem;
+}
+.Musique:hover .gradiant {
+  transform: translateX(0);
+  opacity: 1;
+  filter: brightness(1);
+}
+.Musique:hover h2 {
+  opacity: 1;
+  transform: translateX(-20%);
+  transition-delay: 0.3s;
+}
+.Musique:hover .services-text {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.6s;
+}
+
+.anniversaire {
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  background: url("/assets/img/anniverssaire/Birthdat banniere.png") center/cover no-repeat;
+  background-position-y: -20rem;
+  height: 20rem;
+  margin-top: 5rem;
+}
+.anniversaire h2 {
+  font-family: "ResidentEvil Regular";
+  font-size: 6rem;
+  letter-spacing: 1rem;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  transform: translate(-80%);
+  opacity: 1;
+  transition: transform 0.6s ease;
+  white-space: normal;
+  text-align: center;
+  z-index: 2;
+}
+.anniversaire:hover h2 {
+  transform: translate(-150%);
+}
+.anniversaire .gradiant {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+  background-blend-mode: overlay;
+  transform: translateX(100%);
+  opacity: 0;
+  filter: brightness(0.8);
+  transition: transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease;
+  z-index: 1;
+}
+.anniversaire .services-text {
+  position: absolute;
+  top: 5rem;
+  right: 2rem;
+  width: 50%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.6s ease 0.3s, opacity 0.6s ease 0.3s;
+  color: white;
+  z-index: 2;
+}
+.anniversaire:hover .gradiant {
+  transform: translateX(0);
+  opacity: 1;
+  filter: brightness(1);
+}
+.anniversaire:hover .services-text {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.bapteme {
   overflow: hidden;
   border-radius: 12px;
   cursor: pointer;
@@ -660,7 +727,7 @@ img {
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
-.services-6 h2 {
+.bapteme h2 {
   font-family: "ResidentEvil Regular";
   font-size: 6rem;
   letter-spacing: 1rem;
@@ -675,7 +742,7 @@ img {
   text-align: center;
   z-index: 2;
 }
-.services-6 .gradiant {
+.bapteme .gradiant {
   position: absolute;
   top: 0;
   left: 0;
@@ -687,7 +754,7 @@ img {
   transition: transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease;
   filter: brightness(0.8);
 }
-.services-6 .services-text {
+.bapteme .services-text {
   position: relative;
   opacity: 0;
   width: 50%;
@@ -696,137 +763,96 @@ img {
   left: 2rem;
   top: 5rem;
 }
-.services-6:hover .gradiant {
+.bapteme:hover .gradiant {
   transform: translateX(0);
   opacity: 1;
   filter: brightness(1);
 }
-.services-6:hover h2 {
+.bapteme:hover h2 {
   opacity: 1;
   transform: translateX(0);
   transition-delay: 0.3s;
 }
-.services-6:hover .services-text {
+.bapteme:hover .services-text {
   opacity: 1;
   transform: translateX(0);
   transition-delay: 0.6s;
 }
 
-.services-1 {
-  height: clamp(12rem, 25vw, 20rem);
-  background: url("/assets/img/mariage/ChatGPT Image 17 avr. 2025, 14_10_35.png") center/cover no-repeat;
-  background-position-y: -5rem;
-  overflow: hidden;
-  position: relative;
-  border-radius: 12px;
-  cursor: pointer;
-  perspective: 800px;
-  transform-style: preserve-3d;
-  transition: transform 0.5s ease;
-}
-.services-1 h2 {
-  position: absolute;
-  top: 10%;
-  left: 60%;
-  transform: translate(-80%);
-  font-family: "ResidentEvil Regular";
-  font-size: clamp(3rem, 6vw, 6rem);
-  letter-spacing: clamp(0.5rem, 1.5vw, 1rem);
-  color: white;
-  white-space: nowrap;
-  text-align: center;
-  transition: transform 0.6s ease;
-  z-index: 2;
-}
-.services-1:hover h2 {
-  transform: translate(-230%);
-}
-.services-1 .gradiant {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
-  background-blend-mode: overlay;
-  transform: translateX(100%);
-  opacity: 0;
-  filter: brightness(0.8);
-  transition: transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease;
-  z-index: 1;
-}
-.services-1:hover .gradiant {
-  transform: translateX(0);
-  opacity: 1;
-  filter: brightness(1);
-}
-.services-1 .services-text {
-  position: absolute;
-  top: 5rem;
-  right: 2rem;
-  width: 50%;
-  opacity: 0;
-  transform: translateX(100%);
-  transition: transform 0.6s ease 0.3s, opacity 0.6s ease 0.3s;
-  color: white;
-  z-index: 2;
-}
-.services-1:hover .services-text {
-  transform: translateX(0);
-  opacity: 1;
-}
-@media (max-width: 992px) {
-  .services-1 {
-    height: clamp(30rem, 40vw, 14rem);
+@media screen and (max-width: 1290px) {
+  .anniversaire {
+    background-position-y: inherit;
   }
-  .services-1 h2 {
-    top: 8%;
-    left: 50%;
-    transform: translate(-50%, 0);
+  .anniversaire h2 {
     white-space: normal;
-    padding: 0 1rem;
-  }
-  .services-1:hover h2 {
-    transform: translate(-50%, -20%);
-  }
-  .services-1 .gradiant {
-    transform: translateY(100%);
-  }
-  .services-1:hover .gradiant {
-    transform: translateY(0);
-  }
-  .services-1 .services-text {
-    top: auto;
-    bottom: 1rem;
-    right: auto;
-    left: 1rem;
-    width: calc(100% - 2rem);
-    transform: translateY(100%);
-    opacity: 1;
-    transition: transform 0.6s ease;
-  }
-  .services-1:hover .services-text {
-    transform: translatey(-100%);
+    font-size: 4rem;
+    transition-delay: 0.3s;
   }
 }
-@media (max-width: 576px) {
-  .services-1 {
-    height: clamp(40rem, 40vw, 14rem);
-  }
-  .services-1 .gradiant {
-    background: linear-gradient(360deg);
-    background-position-y: 1rem;
-  }
-  .services-1 h2 {
-    font-size: clamp(2rem, 8vw, 3rem);
-    letter-spacing: clamp(0.3rem, 2vw, 0.5rem);
-  }
-  .services-1 .services-text {
-    bottom: -2rem;
-    font-size: 0.9rem;
-  }
-  .services-1 .services-text:hover .services-text {
-    transform: translateY(-5rem);
+@media screen and (max-width: 1010px) {
+  .anniversaire:hover h2 {
+    transform: translatex(-29rem);
   }
 }
-
+@media screen and (max-width: 995px) {
+  .services-even {
+    background-position-y: inherit;
+  }
+  .services-even h2 {
+    white-space: normal;
+    font-size: 4rem;
+    transition-delay: 0.3s;
+  }
+  .services-even:hover h2 {
+    transform: translatex(-22rem);
+    transition-delay: 0.3s;
+  }
+  .services-odd {
+    background-position-y: inherit;
+  }
+  .services-odd h2 {
+    white-space: normal;
+    font-size: 4rem;
+    transition-delay: 0.3s;
+  }
+}
+@media screen and (max-width: 995px) {
+  .anniversaire h2 {
+    font-size: 3rem;
+    margin-top: 7rem;
+  }
+  .anniversaire:hover h2 {
+    transform: translatex(-27rem);
+    transition-delay: 0.3s;
+  }
+}
+@media screen and (max-width: 730px) {
+  .services-even {
+    background-position-y: inherit;
+  }
+  .services-even:hover h2 {
+    transform: translatey(-30rem);
+    transition-delay: 0.3s;
+  }
+  .services-even:hover .services-text {
+    width: 80%;
+  }
+  .services-odd {
+    background-position-y: inherit;
+  }
+  .services-odd:hover h2 {
+    transform: translatey(-30rem);
+    transition-delay: 0.3s;
+  }
+  .services-odd:hover .services-text {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 486px) {
+  .services-even h2 {
+    transform: translate(-60%);
+  }
+}
 .banner__wrapper {
   background-image: url(../../assets/img/bg-banner.jpg);
   background-size: cover;
