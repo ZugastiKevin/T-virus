@@ -370,25 +370,29 @@ img {
   border: 1px solid #1C1515;
 }
 
-.services {
-  position: relative;
+#services {
+  margin-top: 20rem;
+}
+
+.services-1 {
   overflow: hidden;
   border-radius: 12px;
   cursor: pointer;
   perspective: 800px;
   transform-style: preserve-3d;
   transition: transform 0.5s ease;
-  margin-top: 16rem;
-  background: url("../img/horde rouge.PNG") center/cover no-repeat;
+  background: url("/assets/img/mariage/ChatGPT Image 17 avr. 2025, 14_10_35.png") center/cover no-repeat;
+  background-position-y: -5rem;
   height: 20rem;
+  margin-top: 5rem;
 }
-.services h2 {
+.services-1 h2 {
   font-family: "ResidentEvil Regular";
   font-size: 6rem;
   letter-spacing: 1rem;
   color: white;
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 60%;
   transform: translate(-80%);
   opacity: 1;
@@ -397,10 +401,69 @@ img {
   text-align: center;
   z-index: 2;
 }
-.services:hover {
-  transform: scale(1.05) rotateY(5deg);
+.services-1:hover h2 {
+  transform: translate(-230%);
 }
-.services .gradiant {
+.services-1 .gradiant {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+  background-blend-mode: overlay;
+  transform: translateX(100%);
+  opacity: 0;
+  filter: brightness(0.8);
+  transition: transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease;
+  z-index: 1;
+}
+.services-1 .services-text {
+  position: absolute;
+  top: 5rem;
+  right: 2rem;
+  width: 50%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.6s ease 0.3s, opacity 0.6s ease 0.3s;
+  color: white;
+  z-index: 2;
+}
+.services-1:hover .gradiant {
+  transform: translateX(0);
+  opacity: 1;
+  filter: brightness(1);
+}
+.services-1:hover .services-text {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.services-2 {
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  background: url("/assets/img/team/Meeting.png") center/cover no-repeat;
+  background-position-y: -5rem;
+  height: 20rem;
+  margin-top: 5rem;
+}
+.services-2 h2 {
+  font-family: "ResidentEvil Regular";
+  font-size: 6rem;
+  letter-spacing: 1rem;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  transform: translate(-80%);
+  opacity: 1;
+  transition: transform 0.6s ease;
+  white-space: nowrap;
+  text-align: center;
+  z-index: 2;
+}
+.services-2 .gradiant {
   position: absolute;
   top: 0;
   left: 0;
@@ -412,23 +475,279 @@ img {
   transition: transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease;
   filter: brightness(0.8);
 }
-.services .services-text {
+.services-2 .services-text {
   position: relative;
   opacity: 0;
+  width: 50%;
   transform: translateX(50px);
   transition: opacity 0.6s ease, transform 0.6s ease;
+  left: 2rem;
+  top: 5rem;
 }
-.services:hover .gradiant {
+.services-2:hover .gradiant {
   transform: translateX(0);
   opacity: 1;
   filter: brightness(1);
 }
-.services:hover h2 {
+.services-2:hover h2 {
   opacity: 1;
   transform: translateX(0);
   transition-delay: 0.3s;
 }
-.services:hover .services-text {
+.services-2:hover .services-text {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.6s;
+}
+
+.services-3 {
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  background: url("/assets/img/traiteur/Traiteur paysage 2.png") center/cover no-repeat;
+  background-position-y: -10rem;
+  height: 20rem;
+  margin-top: 5rem;
+}
+.services-3 h2 {
+  font-family: "ResidentEvil Regular";
+  font-size: 6rem;
+  letter-spacing: 1rem;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  transform: translate(-80%);
+  opacity: 1;
+  transition: transform 0.6s ease;
+  white-space: nowrap;
+  text-align: center;
+  z-index: 2;
+}
+.services-3:hover h2 {
+  transform: translate(-230%);
+}
+.services-3 .gradiant {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+  background-blend-mode: overlay;
+  transform: translateX(100%);
+  opacity: 0;
+  filter: brightness(0.8);
+  transition: transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease;
+  z-index: 1;
+}
+.services-3 .services-text {
+  position: absolute;
+  top: 5rem;
+  right: 2rem;
+  width: 50%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.6s ease 0.3s, opacity 0.6s ease 0.3s;
+  color: white;
+  z-index: 2;
+}
+.services-3:hover .gradiant {
+  transform: translateX(0);
+  opacity: 1;
+  filter: brightness(1);
+}
+.services-3:hover .services-text {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.services-4 {
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  background: url("/assets/img/concert/groupe metal banniere.png") center/cover no-repeat;
+  background-position-y: -10rem;
+  height: 20rem;
+  margin-top: 5rem;
+}
+.services-4 h2 {
+  font-family: "ResidentEvil Regular";
+  font-size: 3.5rem;
+  letter-spacing: 1rem;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 65%;
+  transform: translate(-80%);
+  opacity: 1;
+  transition: transform 0.6s ease;
+  white-space: nowrap;
+  text-align: center;
+  z-index: 2;
+}
+.services-4 .gradiant {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: center/cover no-repeat, linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease;
+  filter: brightness(0.8);
+}
+.services-4 .services-text {
+  position: relative;
+  opacity: 0;
+  width: 50%;
+  transform: translateX(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  left: 2rem;
+  top: 5rem;
+}
+.services-4:hover .gradiant {
+  transform: translateX(0);
+  opacity: 1;
+  filter: brightness(1);
+}
+.services-4:hover h2 {
+  opacity: 1;
+  transform: translateX(-20%);
+  transition-delay: 0.3s;
+}
+.services-4:hover .services-text {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.6s;
+}
+
+.services-5 {
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  background: url("/assets/img/anniverssaire/Birthdat banniere.png") center/cover no-repeat;
+  background-position-y: -20rem;
+  height: 20rem;
+  margin-top: 5rem;
+}
+.services-5 h2 {
+  font-family: "ResidentEvil Regular";
+  font-size: 6rem;
+  letter-spacing: 1rem;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  transform: translate(-80%);
+  opacity: 1;
+  transition: transform 0.6s ease;
+  white-space: nowrap;
+  text-align: center;
+  z-index: 2;
+}
+.services-5:hover h2 {
+  transform: translate(-150%);
+}
+.services-5 .gradiant {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+  background-blend-mode: overlay;
+  transform: translateX(100%);
+  opacity: 0;
+  filter: brightness(0.8);
+  transition: transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease;
+  z-index: 1;
+}
+.services-5 .services-text {
+  position: absolute;
+  top: 5rem;
+  right: 2rem;
+  width: 50%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.6s ease 0.3s, opacity 0.6s ease 0.3s;
+  color: white;
+  z-index: 2;
+}
+.services-5:hover .gradiant {
+  transform: translateX(0);
+  opacity: 1;
+  filter: brightness(1);
+}
+.services-5:hover .services-text {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.services-6 {
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  background: url("/assets/img/baptem/batem banniere.png") center/cover no-repeat;
+  background-position-y: -10rem;
+  height: 20rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.services-6 h2 {
+  font-family: "ResidentEvil Regular";
+  font-size: 6rem;
+  letter-spacing: 1rem;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  transform: translate(-80%);
+  opacity: 1;
+  transition: transform 0.6s ease;
+  white-space: nowrap;
+  text-align: center;
+  z-index: 2;
+}
+.services-6 .gradiant {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: center/cover no-repeat, linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease;
+  filter: brightness(0.8);
+}
+.services-6 .services-text {
+  position: relative;
+  opacity: 0;
+  width: 50%;
+  transform: translateX(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  left: 2rem;
+  top: 5rem;
+}
+.services-6:hover .gradiant {
+  transform: translateX(0);
+  opacity: 1;
+  filter: brightness(1);
+}
+.services-6:hover h2 {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+.services-6:hover .services-text {
   opacity: 1;
   transform: translateX(0);
   transition-delay: 0.6s;
