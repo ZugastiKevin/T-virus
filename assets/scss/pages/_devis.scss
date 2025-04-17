@@ -40,3 +40,31 @@
         border: 1px solid variable.$color-black;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .devis__wrapper {
+        width: 80%;
+        padding: 2rem;
+        margin-top: 18rem;
+
+        p {
+            font-size: 0.85rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        .devis__form {
+            gap: 0.8rem;
+        }
+
+        .devis__submit {
+            margin-top: 2rem;
+        }
+
+        .devis__input {
+            font-size: 1rem;
+        }
+    }
+}

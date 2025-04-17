@@ -24,6 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .contact__wrapper .contact-us__wrapper {
   width: 30%;
@@ -66,6 +67,21 @@
   background-color: #1C1515;
   color: #727070;
 }
+@media screen and (max-width: 768px) {
+  .contact__wrapper {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+  .contact__wrapper .contact-us__wrapper,
+  .contact__wrapper #contactform {
+    width: 100%;
+  }
+  .contact__wrapper .contact__reseaux {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}
 
 .contact__copy {
   display: flex;
@@ -88,6 +104,21 @@
 .contact__copy p {
   color: #727070;
   font-size: 0.9rem;
+}
+@media screen and (max-width: 768px) {
+  .contact__copy {
+    margin: 0 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .contact__copy .agence__text {
+    width: 100%;
+    display: block;
+  }
+  .contact__copy img {
+    width: 50%;
+  }
 }
 
 header nav {
@@ -382,6 +413,28 @@ img {
   border: 1px solid #1C1515;
 }
 
+@media screen and (max-width: 1000px) {
+  .devis__wrapper {
+    width: 80%;
+    padding: 2rem;
+    margin-top: 18rem;
+  }
+  .devis__wrapper p {
+    font-size: 0.85rem;
+  }
+  .devis__wrapper h3 {
+    font-size: 1.2rem;
+  }
+  .devis__wrapper .devis__form {
+    gap: 0.8rem;
+  }
+  .devis__wrapper .devis__submit {
+    margin-top: 2rem;
+  }
+  .devis__wrapper .devis__input {
+    font-size: 1rem;
+  }
+}
 .services {
   position: relative;
   overflow: hidden;
