@@ -105,6 +105,7 @@ header {
   .search-wrapper {
     position: fixed;
     top:11.5rem;
+    z-index: 1000;
     background-color: variable.$color-primary;
     border-radius: 18px;
     padding: 1rem;
