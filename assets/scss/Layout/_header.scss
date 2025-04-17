@@ -1,18 +1,16 @@
 @use "../abstracts/variables" as variable;
 
 header {
-    margin-top: 5rem;
 
     nav {
       position: fixed;
+      top:5rem;
       z-index: 1;
       left: 50%;
       transform: translate(-50%);
         background-color: variable.$color-primary;
         padding-left: 5rem; 
         padding-right: 5rem;
-        padding-top: 0.5rem;
-        padding-bottom: 2rem;
         border-radius: 18px;
         ul {
 
@@ -105,8 +103,8 @@ header {
   }
   
   .search-wrapper {
-    position: absolute;
-    top:14rem;
+    position: fixed;
+    top:11.5rem;
     background-color: variable.$color-primary;
     border-radius: 18px;
     padding: 1rem;
@@ -128,7 +126,7 @@ header {
   }
   .search-wrapper.compact {
     position: fixed;
-    top: 14rem;
+    top: 11.5rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
