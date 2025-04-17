@@ -362,8 +362,7 @@ img {
 }
 
 .services {
-  top: 16rem;
-  position: relative;
+  margin-top: 16rem;
   background: url("../img/horde rouge.PNG") center/cover no-repeat;
   height: 20rem;
 }
@@ -373,7 +372,6 @@ img {
   font-weight: 500;
   letter-spacing: 1rem;
   text-align: center;
-  margin-left: 8rem;
 }
 .services .services-text {
   position: absolute;
@@ -397,16 +395,12 @@ img {
   animation: right 2s ease 0s 1 normal forwards;
 }
 .services:hover .gradiant {
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transform: translateX(100%);
-}
-.services:hover .gradiant:hover {
   background: #000000;
   background: linear-gradient(90deg, #727070, rgba(255, 255, 255, 0.51) 47%, rgb(255, 255, 255) 100%);
   transform: translateX(0%);
   opacity: 1;
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes right {
