@@ -18,11 +18,10 @@
         text-shadow: 1px 1px variable.$color-black;
     }
     .banner__cta-primary {
-        width: 10%;
         a {
             display: flex;
             gap: 1rem;
-            padding: 12px 18px;
+            padding: 12px 20px;
             background-color: variable.$color-primary;
             border-radius: 16px;
             align-items: center;
@@ -38,31 +37,59 @@
               box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
             }
     }
+    @media screen and (max-width:768px) {
+      .banner__wrapper {
+        height: auto;
+      }
+      a {
+        margin-bottom: 2rem;
+      }
+    }
 }
 
 .agence__wrapper {
     display: flex;
-    width: 50%;
+    width: 100%;
     gap: 6rem;
+    justify-content: center;
     h3 {
       color: variable.$color-white;
     }
     .agence__text {
-        width: 70%;
         color: variable.$color-thirdary;
+        width: 30%;
     }
     img {
         border-radius: 16px;
+        width: 400px;
+        height: 300px;
         border: 2px solid variable.$color-white;
     }
+    @media screen and (max-width:768px) {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      .agence__text {
+        width: 100%;
+        padding: 0 2rem;
+      }
+      img {
+        width: 100%;
+      }
+  }
 }
 //CARROUSSEL AVIS
 
 #avis {
   padding: 2rem;
-  background-image: url(/assets/img/zombie-bg\ afiche.png);
+  background-image: url(/assets/img/zombie-bg-afiche.png);
   background-size: cover;
   overflow: hidden;
+@media screen and (max-width:768px) {
+  background-position: center;
+  padding: 0;
+}
 }
 
 .carousel__wrapper {
@@ -76,7 +103,6 @@
     font-size: 1.8rem;
   }
 }
-
 
 .carousel-row {
   overflow: hidden;
@@ -110,6 +136,9 @@
   inset 0 -4px 10px variable.$color-primary,
   inset -6px 0 8px variable.$color-secondary,
   inset 6px 0 8px variable.$color-secondary;
+  @media screen and (max-width:768px) {
+    width: 50vw;    
+  }
 }
 
 .name-avis {
@@ -189,7 +218,6 @@
     transform: translateX(-50%);
   }
 }.stars__cta-primary {
-width: 10%;
 text-align: center;
 a {
     display: flex;
@@ -210,5 +238,6 @@ a:hover {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   }
 }
+
 
 
