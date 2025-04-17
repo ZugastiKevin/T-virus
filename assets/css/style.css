@@ -102,8 +102,13 @@ header nav {
   padding-left: 5rem;
   padding-right: 5rem;
   padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 2rem;
   border-radius: 18px;
+}
+header nav ul div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 header nav .menu-principal {
   display: flex;
@@ -113,6 +118,7 @@ header nav .menu-principal {
   list-style: none;
   position: relative;
   padding: 0;
+  margin-right: 0;
 }
 header nav .menu-principal > li {
   font-size: x-large;
@@ -152,8 +158,15 @@ header nav .sous-menus li {
   padding: 10px;
   white-space: nowrap;
 }
+header nav .logo-header {
+  justify-content: center;
+}
 header nav .logo-header img {
   width: 80px;
+}
+header nav img:hover {
+  transform: scale(1.1) rotate(-60deg);
+  transition: all 0.3s ease;
 }
 header #search-container {
   display: flex;
@@ -567,16 +580,53 @@ img {
     transform: translateX(0);
   }
 }
-.stars__wrapper #stars__affiche {
-  display: flex;
-  gap: 4rem;
-  width: 100%;
-  overflow: hidden;
+body {
+  position: relative;
 }
-.stars__wrapper li img {
+
+#background {
+  position: absolute;
+  z-index: -1;
   width: 100%;
   height: 100%;
-  display: block;
+  top: 0;
+  left: 0;
+  opacity: 20%;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-event-mariage {
+  background-image: url(../img/mariageBG.png);
+}
+
+.bg-event-teams {
+  background-image: url(../img/mainsBG.png);
+}
+
+.bg-event-traiteur {
+  background-image: url(../img/traiteurBG.png);
+}
+
+.bg-event-musique {
+  background-image: url(../img/mariageBG.png);
+}
+
+.bg-event-anniversaire {
+  background-image: url(../img/mariageBG.png);
+}
+
+.bg-event-bapteme {
+  background-image: url(../img/mariageBG.png);
+}
+
+main {
+  margin-top: 25rem;
+  text-align: center;
+}
+
+h2 {
+  margin: 2.5rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

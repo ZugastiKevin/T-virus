@@ -1,3 +1,4 @@
+const courgette = document.querySelector("#background");
 const eventTitle = document.querySelector(".event-title");
 const eventSubTitle = document.querySelector(".event-sub-title");
 const eventTexte = document.querySelector(".event-texte");
@@ -22,6 +23,9 @@ async function getData(finder) {
 async function startPage() {
     const params = new URLSearchParams(document.location.search);
     const finder = params.get("event");
+
+    courgette.classList.add(`bg-event-${finder}`)
+
     const reponse = await getData(finder);
     
     eventTitle.textContent = reponse.title;
