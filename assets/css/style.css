@@ -25,17 +25,20 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .contact__wrapper .contact-us__wrapper {
   width: 30%;
   color: #727070;
 }
-.contact__wrapper .contact-us__wrapper .contact__phone, .contact__wrapper .contact-us__wrapper .contact__mail {
+.contact__wrapper .contact-us__wrapper .contact__phone,
+.contact__wrapper .contact-us__wrapper .contact__mail {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.contact__wrapper .contact-us__wrapper .contact__phone .fa-solid, .contact__wrapper .contact-us__wrapper .contact__mail .fa-solid {
+.contact__wrapper .contact-us__wrapper .contact__phone .fa-solid,
+.contact__wrapper .contact-us__wrapper .contact__mail .fa-solid {
   font-size: 1.3rem;
 }
 .contact__wrapper .contact-us__wrapper .contact__reseaux {
@@ -46,11 +49,11 @@
 }
 .contact__wrapper .contact-us__wrapper .contact__reseaux a {
   color: #727070;
+  transition: all 0.3s ease;
 }
 .contact__wrapper .contact-us__wrapper .contact__reseaux a:hover {
   color: #1C1515;
   transform: scale(1.2) rotate(-3deg);
-  transition: all 0.3s ease;
   text-shadow: 0 0 8px #5A0303;
 }
 .contact__wrapper #contactform {
@@ -58,8 +61,8 @@
 }
 .contact__wrapper #contactform .contact__formulaire {
   display: flex;
-  gap: 1rem;
   flex-direction: column;
+  gap: 1rem;
 }
 .contact__wrapper #contactform .form {
   border-radius: 10px;
@@ -84,13 +87,40 @@
 }
 .contact__copy img:hover {
   transform: scale(1.1) rotate(-60deg);
-  transition: all 0.3s ease;
 }
 .contact__copy p {
   color: #727070;
   font-size: 0.9rem;
 }
+@media screen and (max-width: 768px) {
+  .contact__copy {
+    margin: 0 2rem;
+    gap: 0;
+  }
+  .contact__copy .agence__text {
+    width: 100%;
+    display: block;
+  }
+  .contact__copy img {
+    width: 50%;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .contact__wrapper {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+  .contact__wrapper .contact-us__wrapper,
+  .contact__wrapper #contactform {
+    width: 100%;
+  }
+  .contact__wrapper .contact-us__wrapper .contact__reseaux {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}
 header nav {
   position: fixed;
   top: 5rem;
@@ -101,6 +131,12 @@ header nav {
   padding-left: 5rem;
   padding-right: 5rem;
   border-radius: 18px;
+}
+header nav .menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
 }
 header nav ul div {
   display: flex;
@@ -117,16 +153,21 @@ header nav .menu-principal {
   padding: 0;
   margin-right: 0;
 }
-header nav .menu-principal > li {
+header nav .menu-principal a:hover {
+  background: linear-gradient(90deg, #727070, #ffffff, #727070);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header nav .menu-principal li {
   font-size: x-large;
   position: relative;
   padding: 10px;
 }
-header nav .menu-principal > li img {
+header nav .menu-principal li img {
   transform: scale(1) rotate(0deg);
   transition: all 0.3s ease;
 }
-header nav .menu-principal > li img:hover {
+header nav .menu-principal li img:hover {
   transform: scale(1.1) rotate(-60deg);
   transition: all 0.3s ease;
 }
@@ -137,8 +178,10 @@ header nav .sous-menus {
   margin-top: 0.5rem;
   box-shadow: 5px 20px 50px rgba(0, 0, 0, 0.1);
   transition: 0.3s all ease-in-out;
-  transform: scaley(0);
+  transform: scaleY(0);
+  transform-origin: top center;
   border: 0.5px solid black;
+  z-index: 10;
 }
 header nav .sous-menus li a {
   color: white;
@@ -149,7 +192,7 @@ header nav .sous-menus li:hover {
 }
 header nav .dropdown:hover .sous-menus {
   display: block;
-  transform: scaley(1);
+  transform: scaleY(1);
 }
 header nav .sous-menus li {
   padding: 10px;
@@ -174,10 +217,13 @@ header #search-container {
 header .search-wrapper {
   position: fixed;
   top: 11.5rem;
-  z-index: 1000;
   background-color: #700C0C;
   border-radius: 18px;
   padding: 1rem;
+  transition: all 0.3s ease;
+}
+header .search-wrapper .fa-magnifying-glass {
+  top: 0.9rem;
 }
 header .search-wrapper.compact:not(.active) {
   padding: 1rem;
@@ -202,8 +248,7 @@ header .search-wrapper i {
   position: absolute;
   left: 10px;
   top: 40%;
-  transform: translateY(60%);
-  transform: translateX(80%);
+  transform: translate(80%, 60%);
   color: #727070;
 }
 header #search-input {
@@ -212,45 +257,54 @@ header #search-input {
   font-size: 14px;
   border-radius: 18px;
 }
-
-@keyframes slideDown {
-  from {
-    transform: translate(-50%, -100%);
-    opacity: 0;
-  }
-  to {
-    transform: translate(-50%, 0);
-    opacity: 1;
-  }
-}
-@keyframes slideUp {
-  from {
-    transform: translate(-50%, 0);
-    opacity: 1;
-  }
-  to {
-    transform: translate(-50%, -100%);
-    opacity: 0;
-  }
-}
-@keyframes slideIn {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1);
-  }
-}
-.search-wrapper.compact.active #search-input {
+header .search-wrapper.compact.active #search-input {
   height: 45px;
   border-radius: 8px;
-  transition: all 0.3s ease;
 }
-
-.search-wrapper.compact.active {
+header .search-wrapper.compact.active {
   width: auto;
 }
 
+@media screen and (max-width: 1250px) {
+  /* on cible exactement le même chemin que ta règle d'origine */
+  header nav .menu-principal li {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  nav.container {
+    padding: 1rem 1rem;
+    width: auto;
+  }
+  nav.container .menu-toggle {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  nav.container .menu-toggle .fa-bars {
+    font-size: x-large;
+    margin-right: 6rem;
+  }
+  nav.container .menu-principal {
+    flex-direction: column;
+    background: #700C0C;
+    display: none;
+    padding: 1rem 0;
+  }
+  nav.container .menu-principal div {
+    flex-direction: column;
+  }
+  nav.container .menu-principal div img {
+    display: none;
+  }
+  nav.container .menu-principal.open {
+    display: flex;
+  }
+  nav.container .menu-principal li {
+    padding: 0.75rem 1.5rem;
+  }
+}
 .submit-btn {
   padding: 16px 0px;
   border-radius: 10px;
@@ -372,25 +426,51 @@ img {
   border: 1px solid #1C1515;
 }
 
-.services {
-  position: relative;
+@media screen and (max-width: 1000px) {
+  .devis__wrapper {
+    width: 80%;
+    padding: 2rem;
+    margin-top: 18rem;
+  }
+  .devis__wrapper p {
+    font-size: 0.85rem;
+  }
+  .devis__wrapper h3 {
+    font-size: 1.2rem;
+  }
+  .devis__wrapper .devis__form {
+    gap: 0.8rem;
+  }
+  .devis__wrapper .devis__submit {
+    margin-top: 2rem;
+  }
+  .devis__wrapper .devis__input {
+    font-size: 1rem;
+  }
+}
+#services {
+  margin-top: 20rem;
+}
+
+.services-2 {
   overflow: hidden;
   border-radius: 12px;
   cursor: pointer;
   perspective: 800px;
   transform-style: preserve-3d;
   transition: transform 0.5s ease;
-  margin-top: 16rem;
-  background: url("../img/horde rouge.PNG") center/cover no-repeat;
+  background: url("/assets/img/team/Meeting.png") center/cover no-repeat;
+  background-position-y: -5rem;
   height: 20rem;
+  margin-top: 5rem;
 }
-.services h2 {
+.services-2 h2 {
   font-family: "ResidentEvil Regular";
   font-size: 6rem;
   letter-spacing: 1rem;
   color: white;
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 60%;
   transform: translate(-80%);
   opacity: 1;
@@ -399,10 +479,7 @@ img {
   text-align: center;
   z-index: 2;
 }
-.services:hover {
-  transform: scale(1.05) rotateY(5deg);
-}
-.services .gradiant {
+.services-2 .gradiant {
   position: absolute;
   top: 0;
   left: 0;
@@ -414,26 +491,397 @@ img {
   transition: transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease;
   filter: brightness(0.8);
 }
-.services .services-text {
+.services-2 .services-text {
   position: relative;
   opacity: 0;
+  width: 50%;
   transform: translateX(50px);
   transition: opacity 0.6s ease, transform 0.6s ease;
+  left: 2rem;
+  top: 5rem;
 }
-.services:hover .gradiant {
+.services-2:hover .gradiant {
   transform: translateX(0);
   opacity: 1;
   filter: brightness(1);
 }
-.services:hover h2 {
+.services-2:hover h2 {
   opacity: 1;
   transform: translateX(0);
   transition-delay: 0.3s;
 }
-.services:hover .services-text {
+.services-2:hover .services-text {
   opacity: 1;
   transform: translateX(0);
   transition-delay: 0.6s;
+}
+
+.services-3 {
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  background: url("/assets/img/traiteur/Traiteur paysage 2.png") center/cover no-repeat;
+  background-position-y: -10rem;
+  height: 20rem;
+  margin-top: 5rem;
+}
+.services-3 h2 {
+  font-family: "ResidentEvil Regular";
+  font-size: 6rem;
+  letter-spacing: 1rem;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  transform: translate(-80%);
+  opacity: 1;
+  transition: transform 0.6s ease;
+  white-space: nowrap;
+  text-align: center;
+  z-index: 2;
+}
+.services-3:hover h2 {
+  transform: translate(-230%);
+}
+.services-3 .gradiant {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+  background-blend-mode: overlay;
+  transform: translateX(100%);
+  opacity: 0;
+  filter: brightness(0.8);
+  transition: transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease;
+  z-index: 1;
+}
+.services-3 .services-text {
+  position: absolute;
+  top: 5rem;
+  right: 2rem;
+  width: 50%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.6s ease 0.3s, opacity 0.6s ease 0.3s;
+  color: white;
+  z-index: 2;
+}
+.services-3:hover .gradiant {
+  transform: translateX(0);
+  opacity: 1;
+  filter: brightness(1);
+}
+.services-3:hover .services-text {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.services-4 {
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  background: url("/assets/img/concert/groupe metal banniere.png") center/cover no-repeat;
+  background-position-y: -10rem;
+  height: 20rem;
+  margin-top: 5rem;
+}
+.services-4 h2 {
+  font-family: "ResidentEvil Regular";
+  font-size: 3.5rem;
+  letter-spacing: 1rem;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 65%;
+  transform: translate(-80%);
+  opacity: 1;
+  transition: transform 0.6s ease;
+  white-space: nowrap;
+  text-align: center;
+  z-index: 2;
+}
+.services-4 .gradiant {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: center/cover no-repeat, linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease;
+  filter: brightness(0.8);
+}
+.services-4 .services-text {
+  position: relative;
+  opacity: 0;
+  width: 50%;
+  transform: translateX(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  left: 2rem;
+  top: 5rem;
+}
+.services-4:hover .gradiant {
+  transform: translateX(0);
+  opacity: 1;
+  filter: brightness(1);
+}
+.services-4:hover h2 {
+  opacity: 1;
+  transform: translateX(-20%);
+  transition-delay: 0.3s;
+}
+.services-4:hover .services-text {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.6s;
+}
+
+.services-5 {
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  background: url("/assets/img/anniverssaire/Birthdat banniere.png") center/cover no-repeat;
+  background-position-y: -20rem;
+  height: 20rem;
+  margin-top: 5rem;
+}
+.services-5 h2 {
+  font-family: "ResidentEvil Regular";
+  font-size: 6rem;
+  letter-spacing: 1rem;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  transform: translate(-80%);
+  opacity: 1;
+  transition: transform 0.6s ease;
+  white-space: nowrap;
+  text-align: center;
+  z-index: 2;
+}
+.services-5:hover h2 {
+  transform: translate(-150%);
+}
+.services-5 .gradiant {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+  background-blend-mode: overlay;
+  transform: translateX(100%);
+  opacity: 0;
+  filter: brightness(0.8);
+  transition: transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease;
+  z-index: 1;
+}
+.services-5 .services-text {
+  position: absolute;
+  top: 5rem;
+  right: 2rem;
+  width: 50%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.6s ease 0.3s, opacity 0.6s ease 0.3s;
+  color: white;
+  z-index: 2;
+}
+.services-5:hover .gradiant {
+  transform: translateX(0);
+  opacity: 1;
+  filter: brightness(1);
+}
+.services-5:hover .services-text {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.services-6 {
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  background: url("/assets/img/baptem/batem banniere.png") center/cover no-repeat;
+  background-position-y: -10rem;
+  height: 20rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.services-6 h2 {
+  font-family: "ResidentEvil Regular";
+  font-size: 6rem;
+  letter-spacing: 1rem;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  transform: translate(-80%);
+  opacity: 1;
+  transition: transform 0.6s ease;
+  white-space: nowrap;
+  text-align: center;
+  z-index: 2;
+}
+.services-6 .gradiant {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: center/cover no-repeat, linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease;
+  filter: brightness(0.8);
+}
+.services-6 .services-text {
+  position: relative;
+  opacity: 0;
+  width: 50%;
+  transform: translateX(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  left: 2rem;
+  top: 5rem;
+}
+.services-6:hover .gradiant {
+  transform: translateX(0);
+  opacity: 1;
+  filter: brightness(1);
+}
+.services-6:hover h2 {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+.services-6:hover .services-text {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.6s;
+}
+
+.services-1 {
+  height: clamp(12rem, 25vw, 20rem);
+  background: url("/assets/img/mariage/ChatGPT Image 17 avr. 2025, 14_10_35.png") center/cover no-repeat;
+  background-position-y: -5rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+  cursor: pointer;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+.services-1 h2 {
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  transform: translate(-80%);
+  font-family: "ResidentEvil Regular";
+  font-size: clamp(3rem, 6vw, 6rem);
+  letter-spacing: clamp(0.5rem, 1.5vw, 1rem);
+  color: white;
+  white-space: nowrap;
+  text-align: center;
+  transition: transform 0.6s ease;
+  z-index: 2;
+}
+.services-1:hover h2 {
+  transform: translate(-230%);
+}
+.services-1 .gradiant {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+  background-blend-mode: overlay;
+  transform: translateX(100%);
+  opacity: 0;
+  filter: brightness(0.8);
+  transition: transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease;
+  z-index: 1;
+}
+.services-1:hover .gradiant {
+  transform: translateX(0);
+  opacity: 1;
+  filter: brightness(1);
+}
+.services-1 .services-text {
+  position: absolute;
+  top: 5rem;
+  right: 2rem;
+  width: 50%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.6s ease 0.3s, opacity 0.6s ease 0.3s;
+  color: white;
+  z-index: 2;
+}
+.services-1:hover .services-text {
+  transform: translateX(0);
+  opacity: 1;
+}
+@media (max-width: 992px) {
+  .services-1 {
+    height: clamp(30rem, 40vw, 14rem);
+  }
+  .services-1 h2 {
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    white-space: normal;
+    padding: 0 1rem;
+  }
+  .services-1:hover h2 {
+    transform: translate(-50%, -20%);
+  }
+  .services-1 .gradiant {
+    transform: translateY(100%);
+  }
+  .services-1:hover .gradiant {
+    transform: translateY(0);
+  }
+  .services-1 .services-text {
+    top: auto;
+    bottom: 1rem;
+    right: auto;
+    left: 1rem;
+    width: calc(100% - 2rem);
+    transform: translateY(100%);
+    opacity: 1;
+    transition: transform 0.6s ease;
+  }
+  .services-1:hover .services-text {
+    transform: translatey(-100%);
+  }
+}
+@media (max-width: 576px) {
+  .services-1 {
+    height: clamp(40rem, 40vw, 14rem);
+  }
+  .services-1 .gradiant {
+    background: linear-gradient(360deg);
+    background-position-y: 1rem;
+  }
+  .services-1 h2 {
+    font-size: clamp(2rem, 8vw, 3rem);
+    letter-spacing: clamp(0.3rem, 2vw, 0.5rem);
+  }
+  .services-1 .services-text {
+    bottom: -2rem;
+    font-size: 0.9rem;
+  }
+  .services-1 .services-text:hover .services-text {
+    transform: translateY(-5rem);
+  }
 }
 
 .banner__wrapper {
@@ -454,13 +902,10 @@ img {
   text-align: center;
   text-shadow: 1px 1px #1C1515;
 }
-.banner__wrapper .banner__cta-primary {
-  width: 10%;
-}
 .banner__wrapper .banner__cta-primary a {
   display: flex;
   gap: 1rem;
-  padding: 12px 18px;
+  padding: 12px 20px;
   background-color: #700C0C;
   border-radius: 16px;
   align-items: center;
@@ -470,27 +915,59 @@ img {
 .banner__wrapper .banner__cta-primary .fa-solid {
   color: yellow;
 }
+.banner__wrapper .banner__cta-primary a:hover {
+  background-color: #5A0303;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 768px) {
+  .banner__wrapper .banner__wrapper {
+    height: auto;
+  }
+  .banner__wrapper a {
+    margin-bottom: 2rem;
+  }
+}
 
 .agence__wrapper {
   display: flex;
-  width: 50%;
+  width: 100%;
   gap: 6rem;
+  justify-content: center;
 }
 .agence__wrapper h3 {
   color: #ffffff;
 }
 .agence__wrapper .agence__text {
-  width: 70%;
   color: #727070;
+  width: 30%;
 }
 .agence__wrapper img {
   border-radius: 16px;
+  width: 400px;
+  height: 300px;
   border: 2px solid #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .agence__wrapper {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .agence__wrapper .agence__text {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .agence__wrapper img {
+    width: 100%;
+  }
 }
 
 #avis {
   padding: 2rem;
-  background-color: #111;
+  background-image: url(/assets/img/zombie-bg-afiche.png);
+  background-size: cover;
   overflow: hidden;
 }
 
@@ -500,8 +977,7 @@ img {
   gap: 2rem;
   margin-bottom: 10rem;
 }
-
-h3 {
+.carousel__wrapper h3 {
   text-align: center;
   margin-bottom: 5rem;
   font-size: 1.8rem;
@@ -534,7 +1010,12 @@ h3 {
   color: #1C1515;
   padding: 1rem;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+  box-shadow: inset 0 2px 6px #5A0303, inset 0 -4px 10px #700C0C, inset -6px 0 8px #5A0303, inset 6px 0 8px #5A0303;
+}
+@media screen and (max-width: 768px) {
+  .carousel-item {
+    width: 50vw;
+  }
 }
 
 .name-avis {
@@ -563,12 +1044,22 @@ h3 {
 #stars {
   overflow: hidden;
 }
+#stars h3 {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 1.8rem;
+}
+
+.stars__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .carousel__stars {
   overflow: hidden;
   width: 100%;
   position: relative;
-  margin-bottom: 10rem;
 }
 
 #stars__affiche {
@@ -589,20 +1080,45 @@ h3 {
 }
 
 .stars-item img {
-  width: 100%;
-  height: auto;
   display: block;
   object-fit: cover;
   border-radius: 1rem;
 }
 
-/* Animation de scroll linéaire */
 @keyframes scrollStars {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+.stars__cta-primary {
+  text-align: center;
+}
+.stars__cta-primary a {
+  display: flex;
+  gap: 1rem;
+  padding: 12px 18px;
+  background-color: #700C0C;
+  border-radius: 16px;
+  align-items: center;
+  margin-top: 5rem;
+  justify-content: center;
+}
+.stars__cta-primary .fa-solid {
+  color: yellow;
+}
+.stars__cta-primary a:hover {
+  background-color: #5A0303;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  #avis {
+    background-position: center;
+    padding: 0;
   }
 }
 #body {
