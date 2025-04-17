@@ -142,6 +142,13 @@ header {
       width: auto;
     }
 }
+@media screen and (max-width: 1250px) {
+  /* on cible exactement le même chemin que ta règle d'origine */
+  header nav .menu-principal li {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
 @media screen and (max-width: 1000px) {
   nav.container {
     padding: 1rem 1rem;
