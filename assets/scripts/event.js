@@ -32,10 +32,13 @@ async function startPage() {
     eventSubTitle.textContent = reponse['sub-title'];
     eventTexte.textContent = reponse.texte;
     for (i = 0; i < reponse.img.length; i++) {
+        const div = document.createElement("div");
+        div.classList.add("event-card")
         const img = document.createElement("img");
         img.setAttribute("src", reponse.img[i].src)
         img.setAttribute("alt", reponse.img[i].alt)
-        eventCardsContainer.append(img);
+        eventCardsContainer.append(div);
+        div.append(img);
     };
 };
 
