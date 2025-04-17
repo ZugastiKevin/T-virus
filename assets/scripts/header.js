@@ -25,3 +25,9 @@ icon.addEventListener("click", () => {
     wrapper.classList.toggle("active");
   }
 });
+
+const toggle = document.querySelector('.menu-toggle');
+const menu   = document.querySelector('.menu-principal');
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('open');
+});
