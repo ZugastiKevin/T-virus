@@ -654,14 +654,42 @@ h3 {
 }
 
 .event-cards-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
+.big-screen {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .event-card {
-  width: 20%;
+  width: 32%;
+  max-height: 20vh;
+}
+
+@media screen and (max-width: 998px) {
+  .event-card {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .event-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .event-card {
+    width: 100%;
+    max-height: 60vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

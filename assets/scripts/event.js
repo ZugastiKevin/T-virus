@@ -33,12 +33,20 @@ async function startPage() {
     eventTexte.textContent = reponse.texte;
     for (i = 0; i < reponse.img.length; i++) {
         const div = document.createElement("div");
-        div.classList.add("event-card")
+        div.classList.add("event-card");
         const img = document.createElement("img");
-        img.setAttribute("src", reponse.img[i].src)
-        img.setAttribute("alt", reponse.img[i].alt)
+        img.setAttribute("src", reponse.img[i].src);
+        img.setAttribute("alt", reponse.img[i].alt);
         eventCardsContainer.append(div);
         div.append(img);
+        const bigScreen = document.querySelector(".big-screen");
+        div.addEventListener("click", function() {
+            bigScreen.style.display = "block";
+            bigScreen.style.backgroundImage = `url('${reponse.img[i].src}')`;
+        });
+        bigScreen.addEventListener("mouseout", function() {
+            bigScreen.style.display = "none";
+        });
     };
 };
 
