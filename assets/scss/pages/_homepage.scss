@@ -32,7 +32,7 @@
             color: yellow;
         }
         a:hover {
-          background-color: lighten(variable.$color-secondary, 10%);
+          background-color: variable.$color-secondary;
               transform: translateY(-3px);
               box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
             }
@@ -86,10 +86,6 @@
   background-image: url(/assets/img/zombie-bg-afiche.png);
   background-size: cover;
   overflow: hidden;
-@media screen and (max-width:768px) {
-  background-position: center;
-  padding: 0;
-}
 }
 
 .carousel__wrapper {
@@ -233,11 +229,16 @@ a {
     color: yellow;
 }
 a:hover {
-  background-color: lighten(variable.$color-secondary, 10%);
+  background-color: variable.$color-secondary;
   transform: translateY(-3px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   }
 }
 
-
+@media screen and (max-width:768px) {
+  #avis {
+  background-position: center;
+  padding: 0;
+  }
+}
 
