@@ -592,7 +592,7 @@ img {
   display: block;
 }
 
-body {
+#body {
   position: relative;
 }
 
@@ -632,12 +632,12 @@ body {
   background-image: url(../img/mariageBG.png);
 }
 
-main {
+#main {
   margin-top: 25rem;
   text-align: center;
 }
 
-h2 {
+.event-title {
   margin: 2.5rem 0;
 }
 
