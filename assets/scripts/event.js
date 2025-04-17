@@ -21,6 +21,7 @@ async function getData(finder) {
 };
 
 async function startPage() {
+    const bigScreen = document.querySelector(".big-screen");
     const params = new URLSearchParams(document.location.search);
     const finder = params.get("event");
 
@@ -39,8 +40,7 @@ async function startPage() {
         img.setAttribute("alt", reponse.img[i].alt);
         eventCardsContainer.append(div);
         div.append(img);
-        const bigScreen = document.querySelector(".big-screen");
-        div.addEventListener("click", function() {
+        div.addEventListener("click", function(reponse) {
             bigScreen.style.display = "block";
             bigScreen.style.backgroundImage = `url('${reponse.img[i].src}')`;
         });
