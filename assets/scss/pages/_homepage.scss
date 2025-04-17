@@ -55,7 +55,8 @@
 
 #avis {
   padding: 2rem;
-  background-color: #111;
+  background-image: url(/assets/img/zombie-bg\ afiche.png);
+  background-size: cover;
   overflow: hidden;
 }
 
@@ -164,7 +165,6 @@ h3 {
   border-radius: 1rem;
 }
 
-/* Animation de scroll linéaire */
 @keyframes scrollStars {
   0% {
     transform: translateX(0);
