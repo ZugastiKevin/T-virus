@@ -71,7 +71,7 @@
 
 .carousel-track {
   display: flex;
-  animation: scroll-left 5s linear infinite;
+  animation: scroll-left 5s infinite running slidein;
 }
 
 .left-to-right .carousel-track {
