@@ -361,6 +361,96 @@ img {
   border: 1px solid #1C1515;
 }
 
+.services {
+  margin-top: 16rem;
+  background: url("../img/horde rouge.PNG") center/cover no-repeat;
+  height: 20rem;
+}
+.services h2 {
+  font-family: "ResidentEvil Regular";
+  font-size: 6rem;
+  font-weight: 500;
+  letter-spacing: 1rem;
+  text-align: center;
+}
+.services .services-text {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  width: 40%;
+  color: black;
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.services:hover h2 {
+  opacity: 1;
+  animation: right 2s ease 0s 1 normal forwards;
+  text-align: start;
+}
+.services:hover .services-text {
+  opacity: 1;
+  animation: right 2s ease 0s 1 normal forwards;
+}
+.services:hover .gradiant {
+  background: #000000;
+  background: linear-gradient(90deg, #727070, rgba(255, 255, 255, 0.51) 47%, rgb(255, 255, 255) 100%);
+  transform: translateX(0%);
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes right {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateX(250px);
+  }
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  55% {
+    animation-timing-function: ease-in;
+    transform: translateX(68px);
+  }
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateX(32px);
+  }
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateX(8px);
+  }
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+}
+@keyframes test {
+  0% {
+    opacity: 0;
+    transform: rotateY(70deg);
+    transform-origin: right;
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0);
+    transform-origin: right;
+  }
+}
 .banner__wrapper {
   background-image: url(../../assets/img/bg-banner.jpg);
   background-size: cover;
