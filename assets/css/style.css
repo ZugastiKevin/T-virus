@@ -116,20 +116,25 @@ header nav .menu-principal {
   padding: 0;
   margin-right: 0;
 }
-header nav .menu-principal > li {
+header nav a:hover {
+  background: linear-gradient(90deg, #727070, #ffffff, #727070);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header .menu-principal > li {
   font-size: x-large;
   position: relative;
   padding: 10px;
 }
-header nav .menu-principal > li img {
+header .menu-principal > li img {
   transform: scale(1) rotate(0deg);
   transition: all 0.3s ease;
 }
-header nav .menu-principal > li img:hover {
+header .menu-principal > li img:hover {
   transform: scale(1.1) rotate(-60deg);
   transition: all 0.3s ease;
 }
-header nav .sous-menus {
+header .sous-menus {
   position: absolute;
   background-color: #700C0C;
   border-radius: 18px;
@@ -139,38 +144,40 @@ header nav .sous-menus {
   transform: scaley(0);
   border: 0.5px solid black;
 }
-header nav .sous-menus li a {
+header .sous-menus li a {
   color: white;
 }
-header nav .sous-menus li:hover {
+header .sous-menus li:hover {
   background-color: black;
   border-radius: 18px;
 }
-header nav .dropdown:hover .sous-menus {
+header .dropdown:hover .sous-menus {
   display: block;
   transform: scaley(1);
 }
-header nav .sous-menus li {
+header .sous-menus li {
   padding: 10px;
   white-space: nowrap;
 }
-header nav .logo-header {
+header .logo-header {
   justify-content: center;
 }
-header nav .logo-header img {
+header .logo-header img {
   width: 80px;
 }
-header nav img:hover {
+header img:hover {
   transform: scale(1.1) rotate(-60deg);
   transition: all 0.3s ease;
 }
-header #search-container {
+
+#search-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-header .search-wrapper {
+
+.search-wrapper {
   position: fixed;
   top: 11.5rem;
   z-index: 1000;
@@ -178,17 +185,19 @@ header .search-wrapper {
   border-radius: 18px;
   padding: 1rem;
 }
-header .search-wrapper.compact:not(.active) {
+
+.search-wrapper.compact:not(.active) {
   padding: 1rem;
 }
-header .search-wrapper.compact:not(.active) #search-input {
+.search-wrapper.compact:not(.active) #search-input {
   width: 0;
   opacity: 0;
   padding: 0;
   margin: 0;
   pointer-events: none;
 }
-header .search-wrapper.compact {
+
+.search-wrapper.compact {
   position: fixed;
   top: 11.5rem;
   left: 50%;
@@ -197,7 +206,8 @@ header .search-wrapper.compact {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 52px;
 }
-header .search-wrapper i {
+
+.search-wrapper i {
   position: absolute;
   left: 10px;
   top: 40%;
@@ -205,7 +215,8 @@ header .search-wrapper i {
   transform: translateX(80%);
   color: #727070;
 }
-header #search-input {
+
+#search-input {
   padding-left: 30px;
   height: 30px;
   font-size: 14px;
@@ -469,6 +480,11 @@ img {
 .banner__wrapper .banner__cta-primary .fa-solid {
   color: yellow;
 }
+.banner__wrapper .banner__cta-primary a:hover {
+  background-color: rgb(139.3548387097, 4.6451612903, 4.6451612903);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
 
 .agence__wrapper {
   display: flex;
@@ -500,8 +516,7 @@ img {
   gap: 2rem;
   margin-bottom: 10rem;
 }
-
-h3 {
+.carousel__wrapper h3 {
   text-align: center;
   margin-bottom: 5rem;
   font-size: 1.8rem;
@@ -534,7 +549,7 @@ h3 {
   color: #1C1515;
   padding: 1rem;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+  box-shadow: inset 0 2px 6px #5A0303, inset 0 -4px 10px #700C0C, inset -6px 0 8px #5A0303, inset 6px 0 8px #5A0303;
 }
 
 .name-avis {
@@ -563,12 +578,22 @@ h3 {
 #stars {
   overflow: hidden;
 }
+#stars h3 {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 1.8rem;
+}
+
+.stars__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .carousel__stars {
   overflow: hidden;
   width: 100%;
   position: relative;
-  margin-bottom: 10rem;
 }
 
 #stars__affiche {
@@ -589,8 +614,6 @@ h3 {
 }
 
 .stars-item img {
-  width: 100%;
-  height: auto;
   display: block;
   object-fit: cover;
   border-radius: 1rem;
@@ -604,6 +627,29 @@ h3 {
     transform: translateX(-50%);
   }
 }
+.stars__cta-primary {
+  width: 10%;
+  text-align: center;
+}
+.stars__cta-primary a {
+  display: flex;
+  gap: 1rem;
+  padding: 12px 18px;
+  background-color: #700C0C;
+  border-radius: 16px;
+  align-items: center;
+  margin-top: 5rem;
+  justify-content: center;
+}
+.stars__cta-primary .fa-solid {
+  color: yellow;
+}
+.stars__cta-primary a:hover {
+  background-color: rgb(139.3548387097, 4.6451612903, 4.6451612903);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
 #body {
   position: relative;
 }

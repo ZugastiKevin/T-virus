@@ -13,7 +13,6 @@ header {
         padding-right: 5rem;
         border-radius: 18px;
         ul {
-
           div{
             display: flex;
             width: 100%;
@@ -29,8 +28,13 @@ header {
             position: relative;
             padding: 0;
             margin-right: 0;
-
-          }
+            }
+            a:hover {
+              background: linear-gradient(90deg, #727070, #ffffff, #727070);
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+            }
           
           .menu-principal > li {
             font-size: x-large;
@@ -63,8 +67,6 @@ header {
             li:hover{
                 background-color: black;
                 border-radius: 18px;
-
-
             }
           }
 
@@ -91,16 +93,13 @@ header {
             transform: scale(1.1) rotate(-60deg);
             transition: all 0.3s ease;
         }
-          
-       
-} #search-container {
+} 
+#search-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-
-
-  }
+}
   
   .search-wrapper {
     position: fixed;
@@ -109,14 +108,9 @@ header {
     background-color: variable.$color-primary;
     border-radius: 18px;
     padding: 1rem;
-
-
-
   }
   .search-wrapper.compact:not(.active) {
     padding: 1rem;
-
-  
     #search-input {
       width: 0;
       opacity: 0;
@@ -133,10 +127,6 @@ header {
     z-index: 1000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 52px;
-    
-    
-    
-
   }
   
   .search-wrapper i {
@@ -146,8 +136,6 @@ header {
     transform: translateY(60%);
     transform: translateX(80%);
     color: variable.$color-thirdary;
-
-
   }
   
   #search-input {
@@ -155,11 +143,7 @@ header {
     height: 30px;
     font-size: 14px;
     border-radius: 18px;
-
   }
-  
-
-}
 @keyframes slideDown {
   from { transform: translate(-50%, -100%); opacity: 0; }
   to { transform: translate(-50%, 0); opacity: 1; }
@@ -175,12 +159,11 @@ header {
 }
 
 .search-wrapper.compact.active #search-input {
- 
   height: 45px;       
   border-radius: 8px; 
   transition: all 0.3s ease; 
-  
 }
+
 .search-wrapper.compact.active {
   width: auto;
 }
