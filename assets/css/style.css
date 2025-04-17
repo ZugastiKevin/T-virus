@@ -102,8 +102,13 @@ header nav {
   padding-left: 5rem;
   padding-right: 5rem;
   padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 2rem;
   border-radius: 18px;
+}
+header nav ul div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 header nav .menu-principal {
   display: flex;
@@ -113,6 +118,7 @@ header nav .menu-principal {
   list-style: none;
   position: relative;
   padding: 0;
+  margin-right: 0;
 }
 header nav .menu-principal > li {
   font-size: x-large;
@@ -152,8 +158,15 @@ header nav .sous-menus li {
   padding: 10px;
   white-space: nowrap;
 }
+header nav .logo-header {
+  justify-content: center;
+}
 header nav .logo-header img {
   width: 80px;
+}
+header nav img:hover {
+  transform: scale(1.1) rotate(-60deg);
+  transition: all 0.3s ease;
 }
 header #search-container {
   display: flex;

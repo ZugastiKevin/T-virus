@@ -12,8 +12,16 @@ header {
         padding-left: 5rem; 
         padding-right: 5rem;
         padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding-bottom: 2rem;
         border-radius: 18px;
+        ul {
+
+          div{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+          }
+        }
         .menu-principal {
             display: flex;
             justify-content: space-between;
@@ -22,6 +30,7 @@ header {
             list-style: none;
             position: relative;
             padding: 0;
+            margin-right: 0;
 
           }
           
@@ -73,9 +82,17 @@ header {
             
           }
           
+          .logo-header {
+            justify-content: center;
+          }
           .logo-header img {
             width: 80px;
+
           }
+          img:hover {
+            transform: scale(1.1) rotate(-60deg);
+            transition: all 0.3s ease;
+        }
           
        
 } #search-container {
