@@ -2,7 +2,7 @@
 @font-face {
   font-family: "ResidentEvil Regular";
   src: url(../fonts/Resident-Evil-7-Regular/Resident\ Evil\ 7\ Regular.otf);
-  font-weight: 400;
+  font-weight: 500;
 }
 @font-face {
   font-family: "Figtree Bold";
@@ -102,7 +102,7 @@
     display: block;
   }
   .contact__copy img {
-    width: 50%;
+    width: 20%;
   }
 }
 
@@ -112,8 +112,7 @@
     padding: 2rem 1rem;
     gap: 2rem;
   }
-  .contact__wrapper .contact-us__wrapper,
-  .contact__wrapper #contactform {
+  .contact__wrapper .contact-us__wrapper, .contact__wrapper #contactform {
     width: 100%;
   }
   .contact__wrapper .contact-us__wrapper .contact__reseaux {
@@ -932,6 +931,7 @@ img {
   align-items: center;
   margin-top: 10rem;
   justify-content: center;
+  transition: all 0.3s ease;
 }
 .banner__wrapper .banner__cta-primary .fa-solid {
   color: yellow;
@@ -1001,7 +1001,6 @@ img {
 .carousel__wrapper h3 {
   text-align: center;
   margin-bottom: 5rem;
-  font-size: 1.8rem;
 }
 
 .carousel-row {
@@ -1068,7 +1067,6 @@ img {
 #stars h3 {
   text-align: center;
   margin-bottom: 5rem;
-  font-size: 1.8rem;
 }
 
 .stars__wrapper {
@@ -1126,6 +1124,7 @@ img {
   align-items: center;
   margin-top: 5rem;
   justify-content: center;
+  transition: all 0.3s ease;
 }
 .stars__cta-primary .fa-solid {
   color: yellow;
