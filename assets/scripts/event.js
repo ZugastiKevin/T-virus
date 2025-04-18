@@ -33,6 +33,7 @@ async function startPage() {
     eventSubTitle.textContent = reponse['sub-title'];
     eventTexte.textContent = reponse.texte;
     for (i = 0; i < reponse.img.length; i++) {
+        const leLienDeSesMort = reponse.img[i].src;
         const div = document.createElement("div");
         div.classList.add("event-card");
         const img = document.createElement("img");
@@ -40,9 +41,9 @@ async function startPage() {
         img.setAttribute("alt", reponse.img[i].alt);
         eventCardsContainer.append(div);
         div.append(img);
-        div.addEventListener("click", function(reponse) {
+        div.addEventListener("click", function() {
             bigScreen.style.display = "block";
-            bigScreen.style.backgroundImage = `url('${reponse.img[i].src}')`;
+            bigScreen.style.backgroundImage = `url('${leLienDeSesMort}')`;
         });
         bigScreen.addEventListener("mouseout", function() {
             bigScreen.style.display = "none";
