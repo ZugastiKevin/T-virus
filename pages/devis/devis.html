@@ -10,23 +10,31 @@
 <body>
     <header>
         <nav class="container">
+            <div class="menu-toggle">
+                <div class="logo-header">
+                    <a href="index.html"><img src="/assets/img/Logo.png" alt="Logo T-virus"></a>
+                </div >
+                <i class="fa-solid fa-bars"></i>
+            </div>
             <ul class="menu-principal">
                 <div>
                     <li class="dropdown">
                       <a href="/pages/services/services.html">Événements <i class="fa-solid fa-caret-down"></i></a>
                       <ul class="sous-menus">
-                        <li><a href="/pages/events/event.html?event=mariage">Mariage</a></li>
-                        <li><a href="/pages/events/event.html?event=teams">Team building</a></li>
-                        <li><a href="/pages/events/event.html?event=traiteur">Traiteur</a></li>
-                        <li><a href="/pages/events/event.html?event=musique">Musique, concert</a></li>
-                        <li><a href="/pages/events/event.html?event=anniversaire">Anniversaire</a></li>
-                        <li><a href="/pages/events/event.html?event=bapteme">Bapteme</a></li>
+                        <a href="/pages/events/event.html?event=mariage"><li>Mariage</li></a>
+                        <a href="/pages/events/event.html?event=teams"><li>Team building</li></a>
+                        <a href="/pages/events/event.html?event=traiteur"><li>Traiteur</li></a>
+                        <a href="/pages/events/event.html?event=musique"><li>Musique, concert</li></a>
+                        <a href="/pages/events/event.html?event=anniversaire"><li>Anniversaire</li></a>
+                        <a href="/pages/events/event.html?event=bapteme"><li>Bapteme</li></a>
                       </ul>
                     </li>
-                    <li><a href="">Notre entreprise</a></li>
+                    <li>
+                        <a href="/index.html#anchor">Notre entreprise</a>
+                    </li>
                 </div>
                 <div class="logo-header">
-                    <a href=""><img src="/assets/img/Logo.png" alt="Logo T-virus"></a>
+                    <a href="/index.html"><img src="/assets/img/Logo.png" alt="Logo T-virus"></a>
                 </div >
                 <div>
                     <li><a href="#contact-reseaux">Nos réseaux</a></li>
@@ -113,12 +121,12 @@
                             <i class="fa-solid fa-phone"></i>
                             <p>Tel : 07 66 23 10 00</p>
                         </div>  
-                        <div class="contact__mail">
+                        <div class="contact__mail" id="contact">
                             <i class="fa-solid fa-envelope"></i>
                             <p>E-mail : contracte-T-virus@event.com</p>
                         </div>
 
-                        <div class="contact__reseaux">
+                        <div class="contact__reseaux" id="contact-reseaux">
                             <a href=""><i class="fa-brands fa-linkedin"></i></a>
                             <a href=""><i class="fa-brands fa-instagram"></i></a>
                             <a href=""><i class="fa-brands fa-square-facebook"></i></a>
