@@ -1,83 +1,62 @@
 @use "../abstracts/variables" as variable;
 //BANNER
-.banner__wrapper{
-    background-image: url(../../assets/img/bg-banner.jpg);
-    background-size: cover;
-    background-position: bottom;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 16rem;
-    h2 {
-      font-size: 2rem;
+.banner__wrapper {
+  background-image: url(../../assets/img/bg-banner.jpg);
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 16rem;
+  h2 {
+    font-size: 2rem;
+  }
+  .banner__text {
+      text-align: center;
+      text-shadow: 1px 1px variable.$color-black;
+  }
+  .banner__cta-primary {
+    a {
+      display: flex;
+      gap: 1rem;
+      padding: 12px 20px;
+      background-color: variable.$color-primary;
+      border-radius: 16px;
+      align-items: center;
+      margin-top: 10rem;
+      justify-content: center;
+      transition: all 0.3s ease;
     }
-    .banner__text {
-        text-align: center;
-        text-shadow: 1px 1px variable.$color-black;
+    .fa-solid {
+        color: yellow;
     }
-    .banner__cta-primary {
-        a {
-            display: flex;
-            gap: 1rem;
-            padding: 12px 20px;
-            background-color: variable.$color-primary;
-            border-radius: 16px;
-            align-items: center;
-            margin-top: 10rem;
-            justify-content: center;
-            transition: all 0.3s ease;
-        }
-        .fa-solid {
-            color: yellow;
-        }
-        a:hover {
-          background-color: variable.$color-secondary;
-          transform: translateY(-3px);
-          box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-          }
+    a:hover {
+      background-color: variable.$color-secondary;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     }
-    @media screen and (max-width:768px) {
-      .banner__wrapper {
-        height: auto;
-      }
-      a {
-        margin-bottom: 2rem;
-      }
-    }
+  }
 }
 
 .agence__wrapper {
-    display: flex;
-    width: 100%;
-    gap: 6rem;
-    justify-content: center;
-    h3 {
-      color: variable.$color-white;
-    }
-    .agence__text {
-        color: variable.$color-thirdary;
-        width: 30%;
-    }
-    img {
-        border-radius: 16px;
-        width: 400px;
-        height: 300px;
-        border: 2px solid variable.$color-white;
-    }
-    @media screen and (max-width:768px) {
-      width: 100%;
-      flex-direction: column;
-      align-items: center;
-      gap: 0;
-      .agence__text {
-        width: 100%;
-        padding: 0 2rem;
-      }
-      img {
-        width: 100%;
-      }
+  display: flex;
+  width: 100%;
+  gap: 6rem;
+  justify-content: center;
+  h3 {
+    color: variable.$color-white;
+  }
+  .agence__text {
+      color: variable.$color-thirdary;
+      width: 30%;
+  }
+  img {
+      border-radius: 16px;
+      width: 400px;
+      height: 300px;
+      border: 2px solid variable.$color-white;
   }
 }
 //CARROUSSEL AVIS
@@ -132,9 +111,6 @@
   inset 0 -4px 10px variable.$color-primary,
   inset -6px 0 8px variable.$color-secondary,
   inset 6px 0 8px variable.$color-secondary;
-  @media screen and (max-width:768px) {
-    width: 50vw;    
-  }
 }
 
 .name-avis {
@@ -160,7 +136,7 @@
   }
 }
 
-
+//CAROUSSEL AFFICHE
 #stars {
   overflow: hidden;
   h3 {
@@ -168,6 +144,16 @@
     margin-bottom: 5rem;
   }
 }
+.scroll-hint {
+  display: none;
+  @keyframes moveArrow {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+  }
+}
+
+  
 .stars__wrapper {
   display: flex;
   flex-direction: column;
@@ -176,7 +162,6 @@
 .carousel__stars {
   overflow: hidden;
   width: 100%;
-  position: relative;
 }
 
 #stars__affiche {
@@ -197,12 +182,10 @@
 }
 
 .stars-item img {
-
   display: block;
   object-fit: cover;
   border-radius: 1rem;
 }
-
 @keyframes scrollStars {
   0% {
     transform: translateX(0);
@@ -210,9 +193,11 @@
   100% {
     transform: translateX(-50%);
   }
-}.stars__cta-primary {
-text-align: center;
-a {
+}
+
+.stars__cta-primary {
+  text-align: center;
+  a {
     display: flex;
     gap: 1rem;
     padding: 12px 18px;
@@ -222,22 +207,73 @@ a {
     margin-top: 5rem;
     justify-content: center;
     transition: all 0.3s ease;
-
-}
-.fa-solid {
+  }
+  .fa-solid {
     color: yellow;
-}
-a:hover {
-  background-color: variable.$color-secondary;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  a:hover {
+    background-color: variable.$color-secondary;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   }
 }
 
-@media screen and (max-width:768px) {
+
+//RESPONSIVE
+@media screen and (max-width:768px) {  
+  .agence__wrapper {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    .agence__text {
+      width: 100%;
+      padding: 0 2rem;
+    }
+    img {
+      width: 100%;
+  }
+  }
+  .banner__wrapper {
+    height: auto;
+  }
+  a {
+    margin-bottom: 2rem;
+  }
   #avis {
   background-position: center;
   padding: 0;
   }
-}
+  .carousel-item {
+    width: 50vw;
+  }
+//Scroll affiches
+  .carousel__stars {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
 
+  #stars__affiche {
+    animation: none;
+    width: auto;
+  }
+  .stars-item {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+  .scroll-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    animation: bounceArrow 1.5s infinite;
+    color: #999;
+    font-size: 0.9rem;
+    span {
+      font-size: 1.5rem;
+      animation: moveArrow 1s infinite;
+    }
+  }
+}

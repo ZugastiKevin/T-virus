@@ -33,11 +33,7 @@ header {
       position: relative;
       padding: 0;
       margin-right: 0;
-      a:hover {
-        background: linear-gradient(90deg, #727070, #ffffff, #727070);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
+
        li {
         font-size: x-large;
         position: relative;
@@ -148,7 +144,6 @@ header {
     }
 }
 @media screen and (max-width: 1250px) {
-  /* on cible exactement le même chemin que ta règle d'origine */
   header nav .menu-principal li {
     font-size: 0.9rem;
     padding: 8px;
