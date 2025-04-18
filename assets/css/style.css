@@ -1,13 +1,13 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "ResidentEvil Regular";
+  font-family: "ResidentEvil Medium";
   src: url(../fonts/Resident-Evil-7-Regular/Resident\ Evil\ 7\ Regular.otf);
-  font-weight: 400;
+  font-weight: 500;
 }
 @font-face {
-  font-family: "Figtree Bold";
-  src: url(../fonts/Figtree/static/Figtree-Bold.ttf);
-  font-weight: 700;
+  font-family: "Figtree SemiBold";
+  src: url(../fonts/Figtree/static/Figtree-SemiBoldItalic.ttf);
+  font-weight: 600;
 }
 @font-face {
   font-family: "Figtree Regular";
@@ -15,9 +15,9 @@
   font-weight: 400;
 }
 @font-face {
-  font-family: "Figtree Light";
-  src: url(../fonts/Figtree/static/Figtree-Light.ttf);
-  font-weight: 300;
+  font-family: "Figtree Thin";
+  src: url(../fonts/Figtree/static/Figtree-Regular.ttf);
+  font-weight: 100;
 }
 .contact__wrapper {
   background-color: #700C0C;
@@ -341,10 +341,13 @@ section {
   margin-bottom: 3rem;
 }
 
+span {
+  font-family: "Figtree SemiBold";
+}
+
 h1, h2 {
-  font-family: "ResidentEvil Regular";
+  font-family: "ResidentEvil Medium";
   font-size: 6rem;
-  font-weight: 500;
   letter-spacing: 1rem;
   margin-bottom: 0;
 }
@@ -354,9 +357,9 @@ h2 {
 }
 
 h3 {
+  font-family: "Figtree Thin";
   color: #ffffff;
-  font-size: 1.4rem;
-  font-weight: 100;
+  font-size: 1.8rem;
 }
 
 ul {
@@ -372,7 +375,6 @@ a {
 h4 {
   font-size: 1.4rem;
   text-transform: uppercase;
-  font-weight: 400;
 }
 
 img {
@@ -452,69 +454,7 @@ img {
   margin-top: 20rem;
 }
 
-.Mariages {
-  overflow: hidden;
-  border-radius: 12px;
-  cursor: pointer;
-  perspective: 800px;
-  transform-style: preserve-3d;
-  transition: transform 0.5s ease;
-  background: url("/assets/img/traiteur/Traiteur paysage 2.png") center/cover no-repeat;
-  background-position-y: -10rem;
-  height: 20rem;
-  margin-top: 5rem;
-}
-.Mariages h2 {
-  font-family: "ResidentEvil Regular";
-  font-size: 6rem;
-  letter-spacing: 1rem;
-  color: white;
-  position: absolute;
-  top: 10%;
-  left: 60%;
-  transform: translate(-80%);
-  opacity: 1;
-  transition: transform 0.6s ease;
-  white-space: nowrap;
-  text-align: center;
-  z-index: 2;
-}
-.Mariages:hover h2 {
-  transform: translate(-160%);
-}
-.Mariages .gradiant {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
-  background-blend-mode: overlay;
-  transform: translateX(100%);
-  opacity: 0;
-  filter: brightness(0.8);
-  transition: transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease;
-  z-index: 1;
-}
-.Mariages .services-text {
-  position: absolute;
-  top: 5rem;
-  right: 2rem;
-  width: 50%;
-  opacity: 0;
-  transform: translateX(100%);
-  transition: transform 0.6s ease 0.3s, opacity 0.6s ease 0.3s;
-  color: white;
-  z-index: 2;
-}
-.Mariages:hover .gradiant {
-  transform: translateX(0);
-  opacity: 1;
-  filter: brightness(1);
-}
-.Mariages:hover .services-text {
-  transform: translateX(0);
-  opacity: 1;
-}
-
-.Team {
+.services-2 {
   overflow: hidden;
   border-radius: 12px;
   cursor: pointer;
@@ -527,7 +467,7 @@ img {
   margin-top: 5rem;
 }
 .Team h2 {
-  font-family: "ResidentEvil Regular";
+  font-family: "ResidentEvil Medium";
   font-size: 6rem;
   letter-spacing: 1rem;
   color: white;
@@ -591,7 +531,7 @@ img {
   margin-top: 5rem;
 }
 .Traiteur h2 {
-  font-family: "ResidentEvil Regular";
+  font-family: "ResidentEvil Medium";
   font-size: 6rem;
   letter-spacing: 1rem;
   color: white;
@@ -653,7 +593,7 @@ img {
   margin-top: 5rem;
 }
 .Musique h2 {
-  font-family: "ResidentEvil Regular";
+  font-family: "ResidentEvil Medium";
   font-size: 3.5rem;
   letter-spacing: 1rem;
   color: white;
@@ -717,7 +657,7 @@ img {
   margin-top: 5rem;
 }
 .anniversaire h2 {
-  font-family: "ResidentEvil Regular";
+  font-family: "ResidentEvil Medium";
   font-size: 6rem;
   letter-spacing: 1rem;
   color: white;
@@ -780,7 +720,7 @@ img {
   margin-bottom: 5rem;
 }
 .bapteme h2 {
-  font-family: "ResidentEvil Regular";
+  font-family: "ResidentEvil Medium";
   font-size: 6rem;
   letter-spacing: 1rem;
   color: white;
@@ -861,6 +801,69 @@ img {
   }
   .services-odd {
     background-position-y: inherit;
+.services-1 {
+  height: clamp(12rem, 25vw, 20rem);
+  background: url("/assets/img/mariage/ChatGPT Image 17 avr. 2025, 14_10_35.png") center/cover no-repeat;
+  background-position-y: -5rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+  cursor: pointer;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+.services-1 h2 {
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  transform: translate(-80%);
+  font-family: "ResidentEvil Medium";
+  font-size: clamp(3rem, 6vw, 6rem);
+  letter-spacing: clamp(0.5rem, 1.5vw, 1rem);
+  color: white;
+  white-space: nowrap;
+  text-align: center;
+  transition: transform 0.6s ease;
+  z-index: 2;
+}
+.services-1:hover h2 {
+  transform: translate(-230%);
+}
+.services-1 .gradiant {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+  background-blend-mode: overlay;
+  transform: translateX(100%);
+  opacity: 0;
+  filter: brightness(0.8);
+  transition: transform 0.8s ease, opacity 0.8s ease, filter 0.8s ease;
+  z-index: 1;
+}
+.services-1:hover .gradiant {
+  transform: translateX(0);
+  opacity: 1;
+  filter: brightness(1);
+}
+.services-1 .services-text {
+  position: absolute;
+  top: 5rem;
+  right: 2rem;
+  width: 50%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.6s ease 0.3s, opacity 0.6s ease 0.3s;
+  color: white;
+  z-index: 2;
+}
+.services-1:hover .services-text {
+  transform: translateX(0);
+  opacity: 1;
+}
+@media (max-width: 992px) {
+  .services-1 {
+    height: clamp(30rem, 40vw, 14rem);
   }
   .services-odd h2 {
     white-space: normal;
@@ -1042,8 +1045,6 @@ img {
 .name-avis {
   display: block;
   margin-top: 0.5rem;
-  font-style: italic;
-  font-weight: 600;
 }
 
 @keyframes scroll-left {
@@ -1151,11 +1152,10 @@ img {
   z-index: -1;
   width: 100%;
   height: 100%;
-  top: -5rem;
+  bottom: 11.3rem;
   left: 0;
   opacity: 20%;
   background-size: cover;
-  background-position: center;
 }
 
 .bg-event-mariage {
@@ -1189,6 +1189,48 @@ img {
 
 .event-title {
   margin: 2.5rem 0;
+}
+
+.event-cards-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.big-screen {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.event-card {
+  width: 32%;
+  max-height: 20vh;
+}
+
+@media screen and (max-width: 998px) {
+  .event-card {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .event-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .event-card {
+    width: 100%;
+    max-height: 60vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

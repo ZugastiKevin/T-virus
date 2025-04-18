@@ -3,42 +3,143 @@
             "title": "Mariage",
             "sub-title": "Unis pour l’éternité... ou ce qu’il en reste.",
             "texte": "Un mariage, ce n’est pas qu’un engagement. C’est une opération sensible, chargée d’émotion, où chaque décision peut faire basculer la mission dans le chaos… ou dans la légende. Chez T-Virus, nous planifions votre union comme une mission de niveau S. Du choix du lieu sécurisé jusqu’à la décoration immersive, de la coordination tactique des prestataires à l’animation calibrée, tout est orchestré avec précision pour créer un événement unique, conçu selon votre ADN. Pendant que vous profitez pleinement de l’instant — entourés de vos alliés les plus proches — notre équipe en arrière-plan contrôle chaque variable. Aucun bug. Aucun imprévu. Juste de l’élégance, de la maîtrise… et une ambiance à couper au scalpel. Parce qu’un souvenir parfait ne s’improvise pas. Il se prépare. Et chez T-Virus, on est vaccinés contre le banal.",
-            "img": {}
+            "img": [{
+                        "src": "/assets/img/mariage/mariage.png", 
+                        "alt": "photo d'un mariage"
+                },{
+                        "src": "/assets/img/mariage/fantasy.png", 
+                        "alt": "photo d'un mariage fantasy"
+                },{
+                        "src": "/assets/img/mariage/tropical.png", 
+                        "alt": "photo d'un mariage sous les tropiques"
+                },{
+                        "src": "/assets/img/mariage/alliance.png", 
+                        "alt": "photo d'alliance"
+                },{
+                        "src": "/assets/img/mariage/flower.png", 
+                        "alt": "photo d'un bouquet de mariage"
+                },{
+                        "src": "/assets/img/mariage/kiss.png", 
+                        "alt": "photo d'un baiser"
+                }]
     },
     "teams":{
             "title": "Teams bulding",
             "sub-title": "Renforcez vos liens avant qu’ils ne se déchirent.",
             "texte": "Renforcer les liens au sein d’un groupe, c’est comme survivre à une pandémie : il faut de la coordination, de la communication… et une bonne dose d’instinct. Chez T-Virus, nous organisons des journées de team building conçues comme des simulations de terrain. Objectif : tester vos réflexes, réveiller votre esprit d’équipe, et repousser les limites du connu — toujours dans un cadre sécurisé… pour le moment. Escape games en zone contaminée, missions coopératives, ateliers tactiques ou défis physiques… chaque scénario est calibré selon vos objectifs : synergie, leadership, ou simplement relâchement après une campagne intense. Vos collaborateurs apprendront à mieux se connaître, à se couvrir mutuellement… et à s’unir face à l’imprévu. Parce que dans l’univers T-Virus, on ne survit jamais seul.",
             "img": [{
-                        "src": "../../assets/img/logo", 
-                        "alt": "je suis une photo"
+                        "src": "/assets/img/team/target.png", 
+                        "alt": "photo chasse a l'homme"
                 },{
-                        "src": "../../assets/img/logo", 
-                        "alt": "je suis une photo2"
-                }
-                ]
+                        "src": "/assets/img/team/reunion.png", 
+                        "alt": "photo reunion"
+                },{
+                        "src": "/assets/img/team/seminair.png", 
+                        "alt": "photo seminaire"
+                },{
+                        "src": "/assets/img/team/paintball.png", 
+                        "alt": "photo groupe paintball"
+                },{
+                        "src": "/assets/img/team/escalade.png", 
+                        "alt": "photo escalade"
+                },{
+                        "src": "/assets/img/team/rugby.png", 
+                        "alt": "photo cooperation"
+                }]
     },
     "traiteur":{
             "title": "Traiteur",
             "sub-title": "À consommer avant mutation.",
             "texte": "Dans toute opération de grande envergure, la phase d’alimentation est stratégique. Chez T-Virus, nous transformons chaque repas en une expérience sensorielle calibrée avec précision. Cocktail dînatoire ou banquet officiel, repas assis ou ravitaillement express en milieu contrôlé : nos chefs d’élite concoctent des créations sur-mesure, à base de produits rigoureusement sélectionnés — toujours frais, jamais contaminés. Chaque plat, de l’entrée au dessert, est conçu pour stimuler les papilles et frapper l’imaginaire. Saveurs audacieuses, dressages millimétrés, combinaisons inattendues : notre service traiteur ne se contente pas de nourrir… il marque les esprits. Gastronomique, immersif, ou simplement redoutablement bon :nous adaptons notre formule à votre mission. Et croyez-nous… vos invités s’en souviendront.",
-            "img": {}
+            "img": [{
+                        "src": "/assets/img/traiteur/buffet.png", 
+                        "alt": "photo de buffet"
+                },{
+                        "src": "/assets/img/traiteur/repas.png", 
+                        "alt": "photo d'un repas"
+                },{
+                        "src": "/assets/img/traiteur/manger.png", 
+                        "alt": "photo d'une assiete"
+                },{
+                        "src": "/assets/img/traiteur/services.png", 
+                        "alt": "photo disposition de la nouriture"
+                },{
+                        "src": "/assets/img/traiteur/brunch.png", 
+                        "alt": "photo d'un brunch"
+                },{
+                        "src": "/assets/img/traiteur/tchin.png", 
+                        "alt": "photo d'un toast"
+                }]
     },
     "musique":{
             "title": "Musique Concert",
             "sub-title": "Le silence est mort. Place au chaos sonore.",
             "texte": "La musique n’est pas un simple fond sonore.C’est elle qui déclenche l’ambiance, oriente l’énergie et dicte le tempo d’un événement. Chez T-Virus, chaque programmation musicale est conçue comme une injection ciblée d’atmosphère. Concert live, DJ set endiablé, groupe de jazz élégant, ambiance lounge ou scène ouverte : nous adaptons le style à votre vision. Chaque événement mérite sa signature sonore — unique, immersive et mémorable. Côté technique, notre équipe déploie un arsenal complet : sonorisation, éclairage, scène... rien n’est laissé au hasard. Peu importe l’envergure de l’opération, nous garantissons une qualité professionnelle et un rendu impeccable. En collaboration avec des artistes triés sur le volet, nous faisons vibrer votre public au rythme d’une expérience parfaitement maîtrisée. Avec T-Virus, le son ne se contente pas d’accompagner votre événement…il le transforme.",
-            "img": {}
+            "img": [{
+                        "src": "/assets/img/concert/karaoke.png", 
+                        "alt": "photo d'un karaoke"
+                },{
+                        "src": "/assets/img/concert/dj.png", 
+                        "alt": "photo d'un dj"
+                },{
+                        "src": "/assets/img/concert/pogo.png", 
+                        "alt": "photo d'un pogo"
+                },{
+                        "src": "/assets/img/concert/slam.png", 
+                        "alt": "photo d'un slam"
+                },{
+                        "src": "/assets/img/concert/hippie.png", 
+                        "alt": "photo d'un festival hippie"
+                },{
+                        "src": "/assets/img/concert/clasique.png", 
+                        "alt": "photo d'un orchestre"
+                }]
     },
     "anniversaire":{
             "title": "Anniversaire",
             "sub-title": "Tu croyais avoir survécu à l’an passé ? Surprise.",
             "texte": "Chaque année supplémentaire, c’est une mission réussie de plus. Chez T-Virus, on ne célèbre pas juste un anniversaire… on active un protocole festif, calibré pour marquer les esprits – peu importe l’âge ou le niveau d’expérience du sujet. Scénographie thématique, animations originales, ambiance sonore immersive, gâteau mutant personnalisé… chaque élément est conçu pour transformer la fête en événement inoubliable. Intime ou déchaîné, en petit comité ou en mode épidémie joyeuse : nous adaptons nos plans à vos paramètres… et à votre budget. Pendant que vous soufflez vos bougies en toute sécurité, notre équipe gère l’ensemble de l’opération. Pas d’imprévus. Pas de contamination. Juste du fun… contrôlé. Parce qu’avec T-Virus, même une bougie devient une légende.",
-            "img": {}
+            "img": [{
+                        "src": "/assets/img/anniverssaire/partyhard.png", 
+                        "alt": "photo d'anniversaire"
+                },{
+                        "src": "/assets/img/anniverssaire/candle.png", 
+                        "alt": "photo d'anniversaire"
+                },{
+                        "src": "/assets/img/anniverssaire/bigfun.png", 
+                        "alt": "photo d'anniversaire"
+                },{
+                        "src": "/assets/img/anniverssaire/party.png", 
+                        "alt": "photo d'anniversaire"
+                },{
+                        "src": "/assets/img/anniverssaire/rooftop.png", 
+                        "alt": "photo d'anniversaire"
+                },{
+                        "src": "/assets/img/anniverssaire/gift.png", 
+                        "alt": "photo de cadeaux"
+                }]
     },
     "bapteme":{
             "title": "Bapteme",
             "sub-title": "Chaque naissance marque l’arrivée d’un nouveau survivant dans ce monde incertain. Chez T-Virus, nous orchestrons le baptême comme un rite de passage, un moment suspendu entre douceur, mystère… et un soupçon de mise en scène. Décoration immersive, atmosphère apaisante, coordination millimétrée : nous créons une cérémonie à votre image, intime mais inoubliable, pour célébrer l’éveil du futur héros entouré de ses proches. Du repas aux animations, chaque détail est pensé pour que l’émotion soit réelle, mais l’organisation… invisible. Vous profitez pleinement de cette journée symbolique. Nous, on garde les monstres à distance. Parce qu’au sein de T-Virus, même les plus petits événements laissent une empreinte indélébile..",
-            "img": {}
+            "img": [{
+                        "src": "/assets/img/baptem/nain.png", 
+                        "alt": "photo de bapteme"
+                },{
+                        "src": "/assets/img/baptem/puppet.png", 
+                        "alt": "photo de bapteme"
+                },{
+                        "src": "/assets/img/baptem/water.png", 
+                        "alt": "photo de bapteme"
+                },{
+                        "src": "/assets/img/baptem/family.png", 
+                        "alt": "photo de bapteme"
+                },{
+                        "src": "/assets/img/baptem/children.png", 
+                        "alt": "photo de bapteme"
+                },{
+                        "src": "/assets/img/baptem/bucket.png", 
+                        "alt": "photo de bapteme"
+                }]
     }
 }
