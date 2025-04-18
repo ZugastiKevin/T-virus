@@ -3,157 +3,7 @@
 #services {
     margin-top: 20rem;
 }
-// .services-1 {
-//     overflow: hidden;
-//     border-radius: 12px;
-//     cursor: pointer;
-//     perspective: 800px; 
-//     transform-style: preserve-3d;
-//     transition: transform 0.5s ease;
-//     background: url('/assets/img/mariage/ChatGPT\ Image\ 17\ avr.\ 2025\,\ 14_10_35.png') center/cover no-repeat;
-//     background-position-y:-5rem ;
-//     height: 20rem;
-//     margin-top: 5rem;
-
-//     h2 {
-//         font-family: variable.$font-title-1-2;
-//         font-size: 6rem;
-//         letter-spacing: 1rem;
-//         color: white;   
-//         position: absolute;       
-//         top: 10%;                    
-//         left: 60%;
-//         transform: translate(-80%);
-//         opacity: 1;   
-//         transition: transform 0.6s ease;
-//         white-space: nowrap;
-//         text-align: center;
-//         z-index: 2;
-//     }
-//     &:hover h2 {
-//         transform: translate(-230%); 
-//       }
-  
-
-//     .gradiant {
-//       position: absolute;
-//       inset: 0; 
-//       background:
-//         linear-gradient(
-//           270deg,
-//           rgba(0,0,0,0.8) 0%,
-//           rgba(0,0,0,0.3) 50%,
-//           rgba(0,0,0,0)   100%
-//         ),;
-//       background-blend-mode: overlay;
-//       transform: translateX(100%); 
-//       opacity: 0;
-//       filter: brightness(0.8);
-//       transition:
-//         transform 0.8s ease,
-//         opacity   0.8s ease,
-//         filter    0.8s ease;
-//       z-index: 1;
-//     }
-
-//     .services-text {
-//       position: absolute;
-//       top: 5rem;
-//       right: 2rem;
-//       width: 50%;
-//       opacity: 0;
-//       transform: translateX(100%); 
-//       transition:
-//         transform 0.6s ease 0.3s,
-//         opacity   0.6s ease 0.3s;
-//       color: white;
-//       z-index: 2;
-//     }
-
-//     &:hover .gradiant {
-//       transform: translateX(0);
-//       opacity: 1;
-//       filter: brightness(1);
-//     }
-//     &:hover .services-text {
-//       transform: translateX(0);
-//       opacity: 1;
-//     }
-// }
-.services-2 {
-
-  overflow: hidden;
-  border-radius: 12px;
-  cursor: pointer;
-  perspective: 800px; 
-  transform-style: preserve-3d;
-  transition: transform 0.5s ease;
-  background: url('/assets/img/team/Meeting.png') center/cover no-repeat;
-  background-position-y:-5rem ;
-  height: 20rem;
-  margin-top: 5rem;
-
-  h2 {
-    font-family: variable.$font-title-1-2;
-    font-size: 6rem;
-    letter-spacing: 1rem;
-    color: white;   
-    position: absolute;       
-    top: 10%;                    
-    left: 60%;
-    transform: translate(-80%);
-    opacity: 1;   
-    transition: transform 0.6s ease;
-    white-space: nowrap;
-    text-align: center;
-    z-index: 2;
-  }
-  
-    .gradiant {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-
-      background:center/cover no-repeat,
-                  linear-gradient(90deg,
-                    rgba(0,0,0,0.8) 0%,
-                    rgba(0,0,0,0.3) 50%,
-                    rgba(0,0,0,0) 100%);
-      transform: translateX(-100%);   
-      opacity: 0;
-      transition: transform 0.8s ease,
-                  opacity 0.8s ease,
-                  filter 0.8s ease;
-      filter: brightness(0.8);
-    }
-
-    .services-text {
-      position: relative;
-      opacity: 0;
-      width: 50%;
-      transform: translateX(50px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-      left: 2rem;
-      top:5rem;
-    }
-
-    &:hover .gradiant {
-      transform: translateX(0);
-      opacity: 1;
-      filter: brightness(1);
-    }
-    &:hover h2 {
-      opacity: 1;
-      transform: translateX(0);
-      transition-delay: 0.3s;
-    }
-    &:hover .services-text {
-      opacity: 1;
-      transform: translateX(0);
-      transition-delay: 0.6s;
-    }
-}
-.services-3 {
+.Mariages {
     overflow: hidden;
     border-radius: 12px;
     cursor: pointer;
@@ -181,7 +31,7 @@
         z-index: 2;
     }
     &:hover h2 {
-        transform: translate(-230%); 
+        transform: translate(-160%); 
       }
   
 
@@ -230,7 +80,157 @@
       opacity: 1;
     }
 }
-.services-4 {
+.Team {
+
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  perspective: 800px; 
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  background: url('/assets/img/team/Meeting.png') center/cover no-repeat;
+  background-position-y:-5rem ;
+  height: 20rem;
+  margin-top: 5rem;
+
+  h2 {
+    font-family: variable.$font-title-1-2;
+    font-size: 6rem;
+    letter-spacing: 1rem;
+    color: white;   
+    position: absolute;       
+    top: 10%;                    
+    left: 60%;
+    transform: translate(-80%);
+    opacity: 1;   
+    transition: transform 0.6s ease;
+    white-space:normal;
+    text-align: center;
+    z-index: 2;
+  }
+  
+    .gradiant {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+
+      background:center/cover no-repeat,
+                  linear-gradient(90deg,
+                    rgba(0,0,0,0.8) 0%,
+                    rgba(0,0,0,0.3) 50%,
+                    rgba(0,0,0,0) 100%);
+      transform: translateX(-100%);   
+      opacity: 0;
+      transition: transform 0.8s ease,
+                  opacity 0.8s ease,
+                  filter 0.8s ease;
+      filter: brightness(0.8);
+    }
+
+    .services-text {
+      position: relative;
+      opacity: 0;
+      width: 50%;
+      transform: translateX(50px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      left: 2rem;
+      top:5rem;
+    }
+
+    &:hover .gradiant {
+      transform: translateX(0);
+      opacity: 1;
+      filter: brightness(1);
+    }
+    &:hover h2 {
+      opacity: 1;
+      transform: translateX(0);
+      transition-delay: 0.3s;
+    }
+    &:hover .services-text {
+      opacity: 1;
+      transform: translateX(0);
+      transition-delay: 0.6s;
+    }
+}
+.Traiteur {
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    perspective: 800px; 
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    background: url('/assets/img/traiteur/Traiteur\ paysage\ 2.png') center/cover no-repeat;
+    background-position-y:-10rem ;
+    height: 20rem;
+    margin-top: 5rem;
+
+    h2 {
+        font-family: variable.$font-title-1-2;
+        font-size: 6rem;
+        letter-spacing: 1rem;
+        color: white;   
+        position: absolute;       
+        top: 10%;                    
+        left: 60%;
+        transform: translate(-80%);
+        opacity: 1;   
+        transition: transform 0.6s ease;
+        white-space: nowrap;
+        text-align: center;
+        z-index: 2;
+    }
+    &:hover h2 {
+        transform: translate(-180%); 
+      }
+  
+
+    .gradiant {
+      position: absolute;
+      inset: 0; 
+      background:
+        linear-gradient(
+          270deg,
+          rgba(0,0,0,0.8) 0%,
+          rgba(0,0,0,0.3) 50%,
+          rgba(0,0,0,0)   100%
+        ),;
+      background-blend-mode: overlay;
+      transform: translateX(100%); 
+      opacity: 0;
+      filter: brightness(0.8);
+      transition:
+        transform 0.8s ease,
+        opacity   0.8s ease,
+        filter    0.8s ease;
+      z-index: 1;
+    }
+
+    .services-text {
+      position: absolute;
+      top: 5rem;
+      right: 2rem;
+      width: 50%;
+      opacity: 0;
+      transform: translateX(100%); 
+      transition:
+        transform 0.6s ease 0.3s,
+        opacity   0.6s ease 0.3s;
+      color: white;
+      z-index: 2;
+    }
+
+    &:hover .gradiant {
+      transform: translateX(0);
+      opacity: 1;
+      filter: brightness(1);
+    }
+    &:hover .services-text {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+.Musique {
 
     overflow: hidden;
     border-radius: 12px;
@@ -254,7 +254,7 @@
       transform: translate(-80%);
       opacity: 1;   
       transition: transform 0.6s ease;
-      white-space: nowrap;
+      white-space:normal;;
       text-align: center;
       z-index: 2;
     }
@@ -303,7 +303,7 @@
         transition-delay: 0.6s;
       }
 }
-.services-5 {
+.anniversaire {
     overflow: hidden;
     border-radius: 12px;
     cursor: pointer;
@@ -326,7 +326,7 @@
         transform: translate(-80%);
         opacity: 1;   
         transition: transform 0.6s ease;
-        white-space: nowrap;
+        white-space: normal;
         text-align: center;
         z-index: 2;
     }
@@ -380,7 +380,7 @@
       opacity: 1;
     }
 }
-.services-6 {
+.bapteme {
 
     overflow: hidden;
     border-radius: 12px;
@@ -454,142 +454,92 @@
         transition-delay: 0.6s;
       }
 }
+@media screen and (max-width: 1290px){
+    .anniversaire {
+        background-position-y:inherit ;
+        h2 {
+            white-space:normal;
+            font-size: 4rem;
+            transition-delay: 0.3s;
 
+        }
 
-.services-1 {
-    // taille et background fluides
-    height: clamp(12rem, 25vw, 20rem);
-    background: url('/assets/img/mariage/ChatGPT Image 17 avr. 2025, 14_10_35.png') center/cover no-repeat;
-    background-position-y: -5rem;
-    overflow: hidden;
-    position: relative;
-    border-radius: 12px;
-    cursor: pointer;
-    perspective: 800px;
-    transform-style: preserve-3d;
-    transition: transform 0.5s ease;
-  
-    // titre principal
-    h2 {
-      position: absolute;
-      top: 10%;
-      left: 60%;
-      transform: translate(-80%);
-      font-family: variable.$font-title-1-2;
-      font-size: clamp(3rem, 6vw, 6rem);
-      letter-spacing: clamp(0.5rem, 1.5vw, 1rem);
-      color: white;
-      white-space: nowrap;
-      text-align: center;
-      transition: transform 0.6s ease;
-      z-index: 2;
     }
-    &:hover h2 {
-      transform: translate(-230%);
-    }
-  
-    // overlay dégradé
-    .gradiant {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        270deg,
-        rgba(0,0,0,0.8) 0%,
-        rgba(0,0,0,0.3) 50%,
-        rgba(0,0,0,0)   100%
-      );
-      background-blend-mode: overlay;
-      transform: translateX(100%);
-      opacity: 0;
-      filter: brightness(0.8);
-      transition: transform 0.8s ease,
-                  opacity   0.8s ease,
-                  filter    0.8s ease;
-      z-index: 1;
-    }
-    &:hover .gradiant {
-      transform: translateX(0);
-      opacity: 1;
-      filter: brightness(1);
-    }
-  
-    // texte descriptif
-    .services-text {
-      position: absolute;
-      top: 5rem;
-      right: 2rem;
-      width: 50%;
-      opacity: 0;
-      transform: translateX(100%);
-      transition: transform 0.6s ease 0.3s,
-                 opacity   0.6s ease 0.3s;
-      color: white;
-      z-index: 2;
-    }
-    &:hover .services-text {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  
-    // responsive adjustments: horizontal slide -> vertical slide
-    @media (max-width: 992px) {
-        height: clamp(30rem, 40vw, 14rem);
-      h2 {
-        top: 8%;
-        left: 50%;
-        transform: translate(-50%, 0);
-        white-space: normal;
-        padding: 0 1rem;
-      }
-      &:hover h2 {
-        transform: translate(-50%, -20%);
-      }
-  
-      // overlay slide vertical
-      .gradiant {
-        transform: translateY(100%);
-      }
-      &:hover .gradiant {
-        transform: translateY(0);
-      }
-  
-      // texte slide vertical, toujours visible dans le bloc
-      .services-text {
-        top: auto;
-        bottom: 1rem;
-        right: auto;
-        left: 1rem;
-        width: calc(100% - 2rem);
-        transform: translateY(100%);
-        opacity: 1; // on garde visible le conteneur pour animer
-        transition: transform 0.6s ease;
-      }
-      &:hover .services-text {
-        transform: translatey(-100%);
-      }
-    }
-  
-    // petits écrans: ajustements finaux
-    @media (max-width: 576px) {
-      height: clamp(40rem, 40vw, 14rem);
-      .gradiant {
-        background: linear-gradient(
-            360deg,
+} 
+@media screen and (max-width: 1010px) {
+    .anniversaire {
 
-        );
-        background-position-y:1rem;
-      }
-      h2 {
-        font-size: clamp(2rem, 8vw, 3rem);
-        letter-spacing: clamp(0.3rem, 2vw, 0.5rem);
-      }
-      .services-text {
-        bottom: -2rem;;
-        font-size: 0.9rem;
+        &:hover  h2 {
+            transform: translatex(-29rem);
+
+        }
+    }
+    
+}
+@media screen and (max-width: 995px) {
+    .services-even {
+        background-position-y:inherit ;
+        h2 {
+            white-space:normal;
+            font-size: 4rem;
+            transition-delay: 0.3s;
+        }
+        &:hover h2{
+            transform: translatex(-22rem);
+            transition-delay: 0.3s; 
+        }
+    }
+    .services-odd {
+        background-position-y:inherit ;
+        h2 {
+            white-space:normal;
+            font-size: 4rem;
+            transition-delay: 0.3s;
+        }
+    }
+
+}
+@media screen and (max-width: 995px) {
+    .anniversaire{
+        h2 {
+            font-size: 3rem;
+            margin-top: 7rem;
+        }
+        &:hover h2{
+            transform: translatex(-27rem);
+        
+            transition-delay: 0.3s; 
+        }
+
+    }
+}
+@media screen  and (max-width: 730px) {
+    .services-even {
+        background-position-y:inherit;
+        &:hover h2{
+            transform: translatey(-30rem);
+            transition-delay: 0.3s; 
+        }
         &:hover .services-text {
-            transform: translateY(-5rem);
-          }
-      }
+            width: 80%;
+        }
     }
-  }
-  
+    .services-odd {
+        background-position-y:inherit;
+        &:hover h2{
+            transform: translatey(-30rem);
+            transition-delay: 0.3s; 
+        }
+        &:hover .services-text {
+            width: 80%;
+        }
+    }
+}
+@media screen  and (max-width: 486px) {
+    .services-even {
+
+        h2 {
+            transform: translate(-60%);
+        }
+    }
+}
