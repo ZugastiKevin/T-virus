@@ -337,6 +337,26 @@ header .search-wrapper.compact.active {
   transition: all 0.2s ease;
 }
 
+.cta-primary a {
+  display: flex;
+  gap: 1rem;
+  padding: 12px 20px;
+  background-color: #700C0C;
+  border-radius: 16px;
+  align-items: center;
+  margin-top: 10rem;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.cta-primary .fa-solid {
+  color: yellow;
+}
+.cta-primary a:hover {
+  background-color: #5A0303;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -936,25 +956,6 @@ img {
   text-align: center;
   text-shadow: 1px 1px #1C1515;
 }
-.banner__wrapper .banner__cta-primary a {
-  display: flex;
-  gap: 1rem;
-  padding: 12px 20px;
-  background-color: #700C0C;
-  border-radius: 16px;
-  align-items: center;
-  margin-top: 10rem;
-  justify-content: center;
-  transition: all 0.3s ease;
-}
-.banner__wrapper .banner__cta-primary .fa-solid {
-  color: yellow;
-}
-.banner__wrapper .banner__cta-primary a:hover {
-  background-color: #5A0303;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
 @media screen and (max-width: 768px) {
   .banner__wrapper .banner__wrapper {
     height: auto;
@@ -1124,29 +1125,6 @@ img {
     transform: translateX(-50%);
   }
 }
-.stars__cta-primary {
-  text-align: center;
-}
-.stars__cta-primary a {
-  display: flex;
-  gap: 1rem;
-  padding: 12px 18px;
-  background-color: #700C0C;
-  border-radius: 16px;
-  align-items: center;
-  margin-top: 5rem;
-  justify-content: center;
-  transition: all 0.3s ease;
-}
-.stars__cta-primary .fa-solid {
-  color: yellow;
-}
-.stars__cta-primary a:hover {
-  background-color: #5A0303;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
 @media screen and (max-width: 768px) {
   #avis {
     background-position: center;
@@ -1196,9 +1174,16 @@ img {
   margin-top: 25rem;
   text-align: center;
 }
-#main #event-texte .container {
+#main #event-texte .container, #main #event-button .container {
   display: flex;
   justify-content: center;
+}
+#main #event-button .container {
+  display: flex;
+  justify-content: center;
+}
+#main #event-button a {
+  margin-top: 3rem;
 }
 
 .event-title {

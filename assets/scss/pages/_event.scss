@@ -35,10 +35,19 @@
 #main {
     margin-top: 25rem;
     text-align: center;
-    #event-texte {
+    #event-texte, #event-button {
         .container {
             display: flex;
             justify-content: center;
+        }
+    }
+    #event-button {
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        a {
+            margin-top: 3rem;
         }
     }
 }
