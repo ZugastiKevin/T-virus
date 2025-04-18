@@ -23,22 +23,32 @@
     background-image: url(../img/traiteurBG.png);
 }
 .bg-event-musique {
-    background-image: url(../img/mariageBG.png);
+    background-image: url(../img/thekingBG.png);
 }
 .bg-event-anniversaire {
-    background-image: url(../img/mariageBG.png);
+    background-image: url(../img/birthdayBG.png);
 }
 .bg-event-bapteme {
-    background-image: url(../img/mariageBG.png);
+    background-image: url(../img/monkBG.png);
 }
 
 #main {
     margin-top: 25rem;
     text-align: center;
+    #event-texte {
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
 
 .event-title {
     margin: 2.5rem 0;
+}
+
+.event-texte {
+    width: 60%;
 }
 
 .event-cards-container {
@@ -67,6 +77,12 @@
     max-height: 20vh;
 }
 
+@media screen and (min-width: 1980px) {
+    .event-card {
+        max-height: 50vh;
+    }
+}
+
 @media screen and (max-width: 998px) {
     .event-card {
         width: 48%;
@@ -81,5 +97,8 @@
     .event-card {
         width: 100%;
         max-height: 60vh;
+    }
+    .responsive-desactivate {
+        display: none !important;
     }
 }

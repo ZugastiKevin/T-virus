@@ -1,4 +1,4 @@
-const courgette = document.querySelector("#background");
+const forBackground = document.querySelector("#background");
 const eventTitle = document.querySelector(".event-title");
 const eventSubTitle = document.querySelector(".event-sub-title");
 const eventTexte = document.querySelector(".event-texte");
@@ -25,7 +25,7 @@ async function startPage() {
     const params = new URLSearchParams(document.location.search);
     const finder = params.get("event");
 
-    courgette.classList.add(`bg-event-${finder}`)
+    forBackground.classList.add(`bg-event-${finder}`)
 
     const reponse = await getData(finder);
     
@@ -33,7 +33,7 @@ async function startPage() {
     eventSubTitle.textContent = reponse['sub-title'];
     eventTexte.textContent = reponse.texte;
     for (i = 0; i < reponse.img.length; i++) {
-        const leLienDeSesMort = reponse.img[i].src;
+        const source = reponse.img[i].src;
         const div = document.createElement("div");
         div.classList.add("event-card");
         const img = document.createElement("img");
@@ -43,7 +43,7 @@ async function startPage() {
         div.append(img);
         div.addEventListener("click", function() {
             bigScreen.style.display = "block";
-            bigScreen.style.backgroundImage = `url('${leLienDeSesMort}')`;
+            bigScreen.style.backgroundImage = `url(${source})`;
         });
         bigScreen.addEventListener("mouseout", function() {
             bigScreen.style.display = "none";
